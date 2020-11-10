@@ -11,6 +11,6 @@ script:
   - coverage run -m unittest discover unit_tests/ -v
   - coverage html
   - coverage xml -i
-  - unit_tests/send_coverage_codacy.sh
-  - sphinx-apidoc -f -o docs/source ./framework third_party/ ./framework/models/
+  - ./unit_tests/send_coverage_codacy.sh
+  - sphinx-apidoc -f -o docs/source ./framework/models/
   - cd ./docs && make html
