@@ -1,0 +1,32 @@
+syntax = "proto2";
+
+package query;
+
+message Route {
+
+    enum Category {
+        A = 1;
+        B = 2;
+        C = 3;
+        D = 4;
+    }
+
+    message Place {
+        required string country = 1;
+        required string city = 2;
+        required uint32 distance = 3;
+    }
+
+    message Map {
+        required string start_at_long = 1;
+        required string end_at_long = 2;
+        optional uint32 height = 3;
+        optional Category category = 4;
+    }
+
+    message Query {
+        optional uint32 elevation = 1 [default = 0];
+        repeated Place place = 2;
+        required Map map = 3;
+    }
+}

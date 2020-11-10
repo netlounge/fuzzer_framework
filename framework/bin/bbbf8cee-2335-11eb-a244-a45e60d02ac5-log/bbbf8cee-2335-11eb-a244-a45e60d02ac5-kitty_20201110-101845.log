@@ -1,0 +1,27 @@
+[2020-11-10 10:18:48,042] [INFO] [base._load_session] -> No session loaded
+[2020-11-10 10:18:48,046] [DEBUG] [graph.hash] -> hash of template Api is -2921335708666076542
+[2020-11-10 10:18:48,046] [DEBUG] [graph.hash] -> hash of model is 2170563190831075965
+[2020-11-10 10:18:48,046] [INFO] [base._start_message] -> 
+                 --------------------------------------------------
+                 Starting fuzzing session
+                 Target: ProtobufTarget
+                 UI: WebInterface listening on 127.0.0.1:26001
+                 Log: ./kittylogs/kitty_20201110-101845.log
+
+                 Total possible mutation count: 4942
+                 --------------------------------------------------
+                                 Happy hacking
+                 --------------------------------------------------
+            
+[2020-11-10 10:18:48,047] [INFO] [protobuf_controller.setup] -> Check the victim is alive!
+[2020-11-10 10:18:48,048] [ERROR] [base.start] -> Error occurred while fuzzing: Exception('Controller cannot start target')
+[2020-11-10 10:18:48,053] [ERROR] [base.start] -> Traceback (most recent call last):
+  File "/Users/balazsattila/Env/fuzz_framework/.venv/lib/python3.8/site-packages/kitty/fuzzers/base.py", line 379, in start
+    self.target.setup()
+  File "/Users/balazsattila/Env/fuzz_framework/.venv/lib/python3.8/site-packages/kitty/targets/base.py", line 61, in setup
+    self.controller.setup()
+  File "/Users/balazsattila/Env/fuzz_framework/framework/controllers/protobuf/protobuf_controller.py", line 45, in setup
+    raise Exception(msg)
+Exception: Controller cannot start target
+
+[2020-11-10 10:18:50,566] [ERROR] [protobuf_controller.teardown] -> Target is already down

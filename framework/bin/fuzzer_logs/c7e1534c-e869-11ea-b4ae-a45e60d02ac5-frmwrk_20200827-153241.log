@@ -1,0 +1,755 @@
+[INFO] [2020-08-27 15:32:48,640] [runner.py:93] [run] [15:32:48] Starting PROTOBUF Fuzzer session
+[INFO] [2020-08-27 15:32:48,640] [search_file.py:39] [search_file] CONF - file dir: /Users/balazsattila/Env/fuzz_framework /Users/balazsattila/Env/fuzz_framework/framework/models/pb2/api
+[INFO] [2020-08-27 15:32:48,659] [parse_proto.py:200] [_message_types_by_name_keys] PPROT MSG - Message_types_by_name: ['TestRequest', 'TestResponse']
+[INFO] [2020-08-27 15:32:48,659] [parse_proto.py:213] [_message_types_by_name_items] PPROT MSG - message_types_by_items: [('TestRequest', <google.protobuf.pyext._message.MessageDescriptor object at 0x10ecc4280>), ('TestResponse', <google.protobuf.pyext._message.MessageDescriptor object at 0x10ec8ca30>)]
+[INFO] [2020-08-27 15:32:48,659] [parse_proto.py:743] [_get_object_full_name] PPROT FULLNM - Objects full name is: example_api_v2.TestRequest
+[INFO] [2020-08-27 15:32:48,660] [parse_proto.py:518] [_field_is_message_type] PPROT MSGFIELD - Field is not a message type at object: <class 'main_pb2.TestRequest'>
+[INFO] [2020-08-27 15:32:48,660] [parse_proto.py:266] [_has_nested_types_by_name_keys] PPROT HNSTD - It has Nested_types_by_name: ['TestRequiredRequestData']
+[INFO] [2020-08-27 15:32:48,660] [parse_proto.py:430] [_has_field] PPROT HFIELD - Fields_by_name: ['optional_int32', 'optional_int64', 'optional_uint32', 'optional_uint64', 'optional_sint32', 'repeated_int32', 'repeated_int64', 'repeated_uint32', 'optional_message']
+[INFO] [2020-08-27 15:32:48,660] [parse_proto.py:321] [_has_enum_types_by_name] PPROT HENUM - Enum_types_by_name: [('FirstLevelEnum', <google.protobuf.pyext._message.EnumDescriptor object at 0x10ec8cac0>), ('FirstLevelEnumSecond', <google.protobuf.pyext._message.EnumDescriptor object at 0x10ec8ca90>)]
+[INFO] [2020-08-27 15:32:48,660] [parse_proto.py:302] [_nested_types_by_name_items] PPROT NSTD - Nested_types_by_name: [('TestRequiredRequestData', <google.protobuf.pyext._message.MessageDescriptor object at 0x10ecc41c0>)]
+[INFO] [2020-08-27 15:32:48,660] [parse_proto.py:477] [_fields_by_name_items] PPROT FIELD - fields_by_name: [('optional_int32', <google.protobuf.pyext._message.FieldDescriptor object at 0x10ce34fa0>), ('optional_int64', <google.protobuf.pyext._message.FieldDescriptor object at 0x10ce34e20>), ('optional_uint32', <google.protobuf.pyext._message.FieldDescriptor object at 0x10ce34c40>), ('optional_uint64', <google.protobuf.pyext._message.FieldDescriptor object at 0x10ce34c70>), ('optional_sint32', <google.protobuf.pyext._message.FieldDescriptor object at 0x10ce34d00>), ('repeated_int32', <google.protobuf.pyext._message.FieldDescriptor object at 0x10ec8c7c0>), ('repeated_int64', <google.protobuf.pyext._message.FieldDescriptor object at 0x10ec8c9d0>), ('repeated_uint32', <google.protobuf.pyext._message.FieldDescriptor object at 0x10ec8ca00>), ('optional_message', <google.protobuf.pyext._message.FieldDescriptor object at 0x10ec8c9a0>)]
+[DEBUG] [2020-08-27 15:32:48,690] [parse_proto.py:878] [_process_field_types_by_item] PPROT MSG-FIELD-PROC - Processing: ('optional_int32', <google.protobuf.pyext._message.FieldDescriptor object at 0x10ce34fa0>)
+[INFO] [2020-08-27 15:32:48,691] [parse_proto.py:750] [_get_object_full_name] PPROT FULLNM - Objects full name is: example_api_v2.TestRequest.optional_int32
+[INFO] [2020-08-27 15:32:48,691] [parse_proto.py:518] [_field_is_message_type] PPROT MSGFIELD - Field is not a message type at object: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ce34fa0>
+[INFO] [2020-08-27 15:32:48,691] [parse_proto.py:659] [_get_label] PPROT LABEL - Field label is, the object is: 1
+[DEBUG] [2020-08-27 15:32:48,691] [parse_proto.py:531] [_field_type] PPROT MSGFIELD - Field_type: 5
+[INFO] [2020-08-27 15:32:48,691] [parse_proto.py:620] [_get_default_value] PPROT HDEFVAL - Field has default value, the object is: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ce34fa0>
+[INFO] [2020-08-27 15:32:48,691] [parse_proto.py:725] [_extensions_by_name_items] PPROT HASEXT - Field has not got extension value, the object is: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ce34fa0>
+[DEBUG] [2020-08-27 15:32:48,692] [parse_proto.py:891] [_process_field_types_by_item] PPROT-FIELD-SKEL - name: optional_int32
+[DEBUG] [2020-08-27 15:32:48,692] [parse_proto.py:892] [_process_field_types_by_item] PPROT-FIELD-SKEL - object_curr: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ce34fa0>
+[DEBUG] [2020-08-27 15:32:48,692] [parse_proto.py:893] [_process_field_types_by_item] PPROT-FIELD-SKEL - message: None
+[DEBUG] [2020-08-27 15:32:48,692] [parse_proto.py:894] [_process_field_types_by_item] PPROT-FIELD-SKEL - full_name: example_api_v2.TestRequest.optional_int32
+[DEBUG] [2020-08-27 15:32:48,692] [parse_proto.py:895] [_process_field_types_by_item] PPROT-FIELD-SKEL - label: 1
+[DEBUG] [2020-08-27 15:32:48,692] [parse_proto.py:896] [_process_field_types_by_item] PPROT-FIELD-SKEL - field_type: 5
+[DEBUG] [2020-08-27 15:32:48,692] [parse_proto.py:897] [_process_field_types_by_item] PPROT-FIELD-SKEL - default_value: 22
+[DEBUG] [2020-08-27 15:32:48,692] [parse_proto.py:898] [_process_field_types_by_item] PPROT-FIELD-SKEL - extensions: None
+[DEBUG] [2020-08-27 15:32:48,692] [parse_proto.py:878] [_process_field_types_by_item] PPROT MSG-FIELD-PROC - Processing: ('optional_int64', <google.protobuf.pyext._message.FieldDescriptor object at 0x10ce34e20>)
+[INFO] [2020-08-27 15:32:48,692] [parse_proto.py:750] [_get_object_full_name] PPROT FULLNM - Objects full name is: example_api_v2.TestRequest.optional_int64
+[INFO] [2020-08-27 15:32:48,693] [parse_proto.py:518] [_field_is_message_type] PPROT MSGFIELD - Field is not a message type at object: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ce34e20>
+[INFO] [2020-08-27 15:32:48,693] [parse_proto.py:659] [_get_label] PPROT LABEL - Field label is, the object is: 1
+[DEBUG] [2020-08-27 15:32:48,693] [parse_proto.py:531] [_field_type] PPROT MSGFIELD - Field_type: 3
+[INFO] [2020-08-27 15:32:48,693] [parse_proto.py:725] [_extensions_by_name_items] PPROT HASEXT - Field has not got extension value, the object is: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ce34e20>
+[DEBUG] [2020-08-27 15:32:48,693] [parse_proto.py:891] [_process_field_types_by_item] PPROT-FIELD-SKEL - name: optional_int64
+[DEBUG] [2020-08-27 15:32:48,693] [parse_proto.py:892] [_process_field_types_by_item] PPROT-FIELD-SKEL - object_curr: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ce34e20>
+[DEBUG] [2020-08-27 15:32:48,693] [parse_proto.py:893] [_process_field_types_by_item] PPROT-FIELD-SKEL - message: None
+[DEBUG] [2020-08-27 15:32:48,693] [parse_proto.py:894] [_process_field_types_by_item] PPROT-FIELD-SKEL - full_name: example_api_v2.TestRequest.optional_int64
+[DEBUG] [2020-08-27 15:32:48,693] [parse_proto.py:895] [_process_field_types_by_item] PPROT-FIELD-SKEL - label: 1
+[DEBUG] [2020-08-27 15:32:48,693] [parse_proto.py:896] [_process_field_types_by_item] PPROT-FIELD-SKEL - field_type: 3
+[DEBUG] [2020-08-27 15:32:48,693] [parse_proto.py:897] [_process_field_types_by_item] PPROT-FIELD-SKEL - default_value: None
+[DEBUG] [2020-08-27 15:32:48,694] [parse_proto.py:898] [_process_field_types_by_item] PPROT-FIELD-SKEL - extensions: None
+[DEBUG] [2020-08-27 15:32:48,694] [parse_proto.py:878] [_process_field_types_by_item] PPROT MSG-FIELD-PROC - Processing: ('optional_uint32', <google.protobuf.pyext._message.FieldDescriptor object at 0x10ce34c40>)
+[INFO] [2020-08-27 15:32:48,694] [parse_proto.py:750] [_get_object_full_name] PPROT FULLNM - Objects full name is: example_api_v2.TestRequest.optional_uint32
+[INFO] [2020-08-27 15:32:48,694] [parse_proto.py:518] [_field_is_message_type] PPROT MSGFIELD - Field is not a message type at object: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ce34c40>
+[INFO] [2020-08-27 15:32:48,694] [parse_proto.py:659] [_get_label] PPROT LABEL - Field label is, the object is: 1
+[DEBUG] [2020-08-27 15:32:48,694] [parse_proto.py:531] [_field_type] PPROT MSGFIELD - Field_type: 13
+[INFO] [2020-08-27 15:32:48,694] [parse_proto.py:725] [_extensions_by_name_items] PPROT HASEXT - Field has not got extension value, the object is: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ce34c40>
+[DEBUG] [2020-08-27 15:32:48,694] [parse_proto.py:891] [_process_field_types_by_item] PPROT-FIELD-SKEL - name: optional_uint32
+[DEBUG] [2020-08-27 15:32:48,694] [parse_proto.py:892] [_process_field_types_by_item] PPROT-FIELD-SKEL - object_curr: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ce34c40>
+[DEBUG] [2020-08-27 15:32:48,695] [parse_proto.py:893] [_process_field_types_by_item] PPROT-FIELD-SKEL - message: None
+[DEBUG] [2020-08-27 15:32:48,695] [parse_proto.py:894] [_process_field_types_by_item] PPROT-FIELD-SKEL - full_name: example_api_v2.TestRequest.optional_uint32
+[DEBUG] [2020-08-27 15:32:48,695] [parse_proto.py:895] [_process_field_types_by_item] PPROT-FIELD-SKEL - label: 1
+[DEBUG] [2020-08-27 15:32:48,695] [parse_proto.py:896] [_process_field_types_by_item] PPROT-FIELD-SKEL - field_type: 13
+[DEBUG] [2020-08-27 15:32:48,695] [parse_proto.py:897] [_process_field_types_by_item] PPROT-FIELD-SKEL - default_value: None
+[DEBUG] [2020-08-27 15:32:48,695] [parse_proto.py:898] [_process_field_types_by_item] PPROT-FIELD-SKEL - extensions: None
+[DEBUG] [2020-08-27 15:32:48,695] [parse_proto.py:878] [_process_field_types_by_item] PPROT MSG-FIELD-PROC - Processing: ('optional_uint64', <google.protobuf.pyext._message.FieldDescriptor object at 0x10ce34c70>)
+[INFO] [2020-08-27 15:32:48,695] [parse_proto.py:750] [_get_object_full_name] PPROT FULLNM - Objects full name is: example_api_v2.TestRequest.optional_uint64
+[INFO] [2020-08-27 15:32:48,695] [parse_proto.py:518] [_field_is_message_type] PPROT MSGFIELD - Field is not a message type at object: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ce34c70>
+[INFO] [2020-08-27 15:32:48,696] [parse_proto.py:659] [_get_label] PPROT LABEL - Field label is, the object is: 1
+[DEBUG] [2020-08-27 15:32:48,696] [parse_proto.py:531] [_field_type] PPROT MSGFIELD - Field_type: 4
+[INFO] [2020-08-27 15:32:48,696] [parse_proto.py:725] [_extensions_by_name_items] PPROT HASEXT - Field has not got extension value, the object is: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ce34c70>
+[DEBUG] [2020-08-27 15:32:48,696] [parse_proto.py:891] [_process_field_types_by_item] PPROT-FIELD-SKEL - name: optional_uint64
+[DEBUG] [2020-08-27 15:32:48,696] [parse_proto.py:892] [_process_field_types_by_item] PPROT-FIELD-SKEL - object_curr: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ce34c70>
+[DEBUG] [2020-08-27 15:32:48,696] [parse_proto.py:893] [_process_field_types_by_item] PPROT-FIELD-SKEL - message: None
+[DEBUG] [2020-08-27 15:32:48,696] [parse_proto.py:894] [_process_field_types_by_item] PPROT-FIELD-SKEL - full_name: example_api_v2.TestRequest.optional_uint64
+[DEBUG] [2020-08-27 15:32:48,697] [parse_proto.py:895] [_process_field_types_by_item] PPROT-FIELD-SKEL - label: 1
+[DEBUG] [2020-08-27 15:32:48,697] [parse_proto.py:896] [_process_field_types_by_item] PPROT-FIELD-SKEL - field_type: 4
+[DEBUG] [2020-08-27 15:32:48,697] [parse_proto.py:897] [_process_field_types_by_item] PPROT-FIELD-SKEL - default_value: None
+[DEBUG] [2020-08-27 15:32:48,697] [parse_proto.py:898] [_process_field_types_by_item] PPROT-FIELD-SKEL - extensions: None
+[DEBUG] [2020-08-27 15:32:48,697] [parse_proto.py:878] [_process_field_types_by_item] PPROT MSG-FIELD-PROC - Processing: ('optional_sint32', <google.protobuf.pyext._message.FieldDescriptor object at 0x10ce34d00>)
+[INFO] [2020-08-27 15:32:48,697] [parse_proto.py:750] [_get_object_full_name] PPROT FULLNM - Objects full name is: example_api_v2.TestRequest.optional_sint32
+[INFO] [2020-08-27 15:32:48,697] [parse_proto.py:518] [_field_is_message_type] PPROT MSGFIELD - Field is not a message type at object: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ce34d00>
+[INFO] [2020-08-27 15:32:48,697] [parse_proto.py:659] [_get_label] PPROT LABEL - Field label is, the object is: 1
+[DEBUG] [2020-08-27 15:32:48,698] [parse_proto.py:531] [_field_type] PPROT MSGFIELD - Field_type: 17
+[INFO] [2020-08-27 15:32:48,698] [parse_proto.py:725] [_extensions_by_name_items] PPROT HASEXT - Field has not got extension value, the object is: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ce34d00>
+[DEBUG] [2020-08-27 15:32:48,698] [parse_proto.py:891] [_process_field_types_by_item] PPROT-FIELD-SKEL - name: optional_sint32
+[DEBUG] [2020-08-27 15:32:48,699] [parse_proto.py:892] [_process_field_types_by_item] PPROT-FIELD-SKEL - object_curr: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ce34d00>
+[DEBUG] [2020-08-27 15:32:48,701] [parse_proto.py:893] [_process_field_types_by_item] PPROT-FIELD-SKEL - message: None
+[DEBUG] [2020-08-27 15:32:48,701] [parse_proto.py:894] [_process_field_types_by_item] PPROT-FIELD-SKEL - full_name: example_api_v2.TestRequest.optional_sint32
+[DEBUG] [2020-08-27 15:32:48,702] [parse_proto.py:895] [_process_field_types_by_item] PPROT-FIELD-SKEL - label: 1
+[DEBUG] [2020-08-27 15:32:48,703] [parse_proto.py:896] [_process_field_types_by_item] PPROT-FIELD-SKEL - field_type: 17
+[DEBUG] [2020-08-27 15:32:48,703] [parse_proto.py:897] [_process_field_types_by_item] PPROT-FIELD-SKEL - default_value: None
+[DEBUG] [2020-08-27 15:32:48,704] [parse_proto.py:898] [_process_field_types_by_item] PPROT-FIELD-SKEL - extensions: None
+[DEBUG] [2020-08-27 15:32:48,704] [parse_proto.py:878] [_process_field_types_by_item] PPROT MSG-FIELD-PROC - Processing: ('repeated_int32', <google.protobuf.pyext._message.FieldDescriptor object at 0x10ec8c7c0>)
+[INFO] [2020-08-27 15:32:48,704] [parse_proto.py:750] [_get_object_full_name] PPROT FULLNM - Objects full name is: example_api_v2.TestRequest.repeated_int32
+[INFO] [2020-08-27 15:32:48,704] [parse_proto.py:518] [_field_is_message_type] PPROT MSGFIELD - Field is not a message type at object: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ec8c7c0>
+[INFO] [2020-08-27 15:32:48,704] [parse_proto.py:659] [_get_label] PPROT LABEL - Field label is, the object is: 3
+[DEBUG] [2020-08-27 15:32:48,705] [parse_proto.py:531] [_field_type] PPROT MSGFIELD - Field_type: 5
+[INFO] [2020-08-27 15:32:48,705] [parse_proto.py:725] [_extensions_by_name_items] PPROT HASEXT - Field has not got extension value, the object is: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ec8c7c0>
+[DEBUG] [2020-08-27 15:32:48,706] [parse_proto.py:891] [_process_field_types_by_item] PPROT-FIELD-SKEL - name: repeated_int32
+[DEBUG] [2020-08-27 15:32:48,706] [parse_proto.py:892] [_process_field_types_by_item] PPROT-FIELD-SKEL - object_curr: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ec8c7c0>
+[DEBUG] [2020-08-27 15:32:48,706] [parse_proto.py:893] [_process_field_types_by_item] PPROT-FIELD-SKEL - message: None
+[DEBUG] [2020-08-27 15:32:48,707] [parse_proto.py:894] [_process_field_types_by_item] PPROT-FIELD-SKEL - full_name: example_api_v2.TestRequest.repeated_int32
+[DEBUG] [2020-08-27 15:32:48,707] [parse_proto.py:895] [_process_field_types_by_item] PPROT-FIELD-SKEL - label: 3
+[DEBUG] [2020-08-27 15:32:48,707] [parse_proto.py:896] [_process_field_types_by_item] PPROT-FIELD-SKEL - field_type: 5
+[DEBUG] [2020-08-27 15:32:48,707] [parse_proto.py:897] [_process_field_types_by_item] PPROT-FIELD-SKEL - default_value: None
+[DEBUG] [2020-08-27 15:32:48,707] [parse_proto.py:898] [_process_field_types_by_item] PPROT-FIELD-SKEL - extensions: None
+[DEBUG] [2020-08-27 15:32:48,707] [parse_proto.py:878] [_process_field_types_by_item] PPROT MSG-FIELD-PROC - Processing: ('repeated_int64', <google.protobuf.pyext._message.FieldDescriptor object at 0x10ec8c9d0>)
+[INFO] [2020-08-27 15:32:48,707] [parse_proto.py:750] [_get_object_full_name] PPROT FULLNM - Objects full name is: example_api_v2.TestRequest.repeated_int64
+[INFO] [2020-08-27 15:32:48,707] [parse_proto.py:518] [_field_is_message_type] PPROT MSGFIELD - Field is not a message type at object: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ec8c9d0>
+[INFO] [2020-08-27 15:32:48,708] [parse_proto.py:659] [_get_label] PPROT LABEL - Field label is, the object is: 3
+[DEBUG] [2020-08-27 15:32:48,708] [parse_proto.py:531] [_field_type] PPROT MSGFIELD - Field_type: 3
+[INFO] [2020-08-27 15:32:48,709] [parse_proto.py:725] [_extensions_by_name_items] PPROT HASEXT - Field has not got extension value, the object is: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ec8c9d0>
+[DEBUG] [2020-08-27 15:32:48,710] [parse_proto.py:891] [_process_field_types_by_item] PPROT-FIELD-SKEL - name: repeated_int64
+[DEBUG] [2020-08-27 15:32:48,710] [parse_proto.py:892] [_process_field_types_by_item] PPROT-FIELD-SKEL - object_curr: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ec8c9d0>
+[DEBUG] [2020-08-27 15:32:48,710] [parse_proto.py:893] [_process_field_types_by_item] PPROT-FIELD-SKEL - message: None
+[DEBUG] [2020-08-27 15:32:48,762] [parse_proto.py:894] [_process_field_types_by_item] PPROT-FIELD-SKEL - full_name: example_api_v2.TestRequest.repeated_int64
+[DEBUG] [2020-08-27 15:32:48,762] [parse_proto.py:895] [_process_field_types_by_item] PPROT-FIELD-SKEL - label: 3
+[DEBUG] [2020-08-27 15:32:48,762] [parse_proto.py:896] [_process_field_types_by_item] PPROT-FIELD-SKEL - field_type: 3
+[DEBUG] [2020-08-27 15:32:48,762] [parse_proto.py:897] [_process_field_types_by_item] PPROT-FIELD-SKEL - default_value: None
+[DEBUG] [2020-08-27 15:32:48,762] [parse_proto.py:898] [_process_field_types_by_item] PPROT-FIELD-SKEL - extensions: None
+[DEBUG] [2020-08-27 15:32:48,763] [parse_proto.py:878] [_process_field_types_by_item] PPROT MSG-FIELD-PROC - Processing: ('repeated_uint32', <google.protobuf.pyext._message.FieldDescriptor object at 0x10ec8ca00>)
+[INFO] [2020-08-27 15:32:48,763] [parse_proto.py:750] [_get_object_full_name] PPROT FULLNM - Objects full name is: example_api_v2.TestRequest.repeated_uint32
+[INFO] [2020-08-27 15:32:48,763] [parse_proto.py:518] [_field_is_message_type] PPROT MSGFIELD - Field is not a message type at object: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ec8ca00>
+[INFO] [2020-08-27 15:32:48,763] [parse_proto.py:659] [_get_label] PPROT LABEL - Field label is, the object is: 3
+[DEBUG] [2020-08-27 15:32:48,763] [parse_proto.py:531] [_field_type] PPROT MSGFIELD - Field_type: 13
+[INFO] [2020-08-27 15:32:48,763] [parse_proto.py:725] [_extensions_by_name_items] PPROT HASEXT - Field has not got extension value, the object is: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ec8ca00>
+[DEBUG] [2020-08-27 15:32:48,763] [parse_proto.py:891] [_process_field_types_by_item] PPROT-FIELD-SKEL - name: repeated_uint32
+[DEBUG] [2020-08-27 15:32:48,764] [parse_proto.py:892] [_process_field_types_by_item] PPROT-FIELD-SKEL - object_curr: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ec8ca00>
+[DEBUG] [2020-08-27 15:32:48,764] [parse_proto.py:893] [_process_field_types_by_item] PPROT-FIELD-SKEL - message: None
+[DEBUG] [2020-08-27 15:32:48,764] [parse_proto.py:894] [_process_field_types_by_item] PPROT-FIELD-SKEL - full_name: example_api_v2.TestRequest.repeated_uint32
+[DEBUG] [2020-08-27 15:32:48,764] [parse_proto.py:895] [_process_field_types_by_item] PPROT-FIELD-SKEL - label: 3
+[DEBUG] [2020-08-27 15:32:48,764] [parse_proto.py:896] [_process_field_types_by_item] PPROT-FIELD-SKEL - field_type: 13
+[DEBUG] [2020-08-27 15:32:48,764] [parse_proto.py:897] [_process_field_types_by_item] PPROT-FIELD-SKEL - default_value: None
+[DEBUG] [2020-08-27 15:32:48,764] [parse_proto.py:898] [_process_field_types_by_item] PPROT-FIELD-SKEL - extensions: None
+[DEBUG] [2020-08-27 15:32:48,764] [parse_proto.py:878] [_process_field_types_by_item] PPROT MSG-FIELD-PROC - Processing: ('optional_message', <google.protobuf.pyext._message.FieldDescriptor object at 0x10ec8c9a0>)
+[INFO] [2020-08-27 15:32:48,764] [parse_proto.py:750] [_get_object_full_name] PPROT FULLNM - Objects full name is: example_api_v2.TestRequest.optional_message
+[INFO] [2020-08-27 15:32:48,765] [parse_proto.py:518] [_field_is_message_type] PPROT MSGFIELD - Field is not a message type at object: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ec8c9a0>
+[INFO] [2020-08-27 15:32:48,765] [parse_proto.py:659] [_get_label] PPROT LABEL - Field label is, the object is: 1
+[DEBUG] [2020-08-27 15:32:48,765] [parse_proto.py:531] [_field_type] PPROT MSGFIELD - Field_type: 11
+[INFO] [2020-08-27 15:32:48,765] [parse_proto.py:725] [_extensions_by_name_items] PPROT HASEXT - Field has not got extension value, the object is: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ec8c9a0>
+[DEBUG] [2020-08-27 15:32:48,765] [parse_proto.py:891] [_process_field_types_by_item] PPROT-FIELD-SKEL - name: optional_message
+[DEBUG] [2020-08-27 15:32:48,765] [parse_proto.py:892] [_process_field_types_by_item] PPROT-FIELD-SKEL - object_curr: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ec8c9a0>
+[DEBUG] [2020-08-27 15:32:48,765] [parse_proto.py:893] [_process_field_types_by_item] PPROT-FIELD-SKEL - message: None
+[DEBUG] [2020-08-27 15:32:48,765] [parse_proto.py:894] [_process_field_types_by_item] PPROT-FIELD-SKEL - full_name: example_api_v2.TestRequest.optional_message
+[DEBUG] [2020-08-27 15:32:48,765] [parse_proto.py:895] [_process_field_types_by_item] PPROT-FIELD-SKEL - label: 1
+[DEBUG] [2020-08-27 15:32:48,765] [parse_proto.py:896] [_process_field_types_by_item] PPROT-FIELD-SKEL - field_type: 11
+[DEBUG] [2020-08-27 15:32:48,766] [parse_proto.py:897] [_process_field_types_by_item] PPROT-FIELD-SKEL - default_value: None
+[DEBUG] [2020-08-27 15:32:48,766] [parse_proto.py:898] [_process_field_types_by_item] PPROT-FIELD-SKEL - extensions: None
+[INFO] [2020-08-27 15:32:48,766] [parse_proto.py:591] [_imported_message_name_by_items] PPROT IMPORTEDMSG - Imported message objects: [('b_test_request', <google.protobuf.pyext._message.MessageDescriptor object at 0x10ecc41f0>)]
+[INFO] [2020-08-27 15:32:48,766] [parse_proto.py:750] [_get_object_full_name] PPROT FULLNM - Objects full name is: example_api_v2.request_b.b_test_request
+[INFO] [2020-08-27 15:32:48,766] [parse_proto.py:518] [_field_is_message_type] PPROT MSGFIELD - Field is not a message type at object: <google.protobuf.pyext._message.MessageDescriptor object at 0x10ecc41f0>
+[INFO] [2020-08-27 15:32:48,766] [parse_proto.py:441] [_has_field] PPROT HFIELD - Fields_by_name: ['default_uint32', 'default_uint64', 'default_bool', 'default_string', 'default_bytes']
+[INFO] [2020-08-27 15:32:48,766] [parse_proto.py:309] [_nested_types_by_name_items] PPROT NSTD - Nested_types_by_name: []
+[INFO] [2020-08-27 15:32:48,766] [parse_proto.py:484] [_fields_by_name_items] PPROT FIELD - fields_by_name: [('default_uint32', <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc4430>), ('default_uint64', <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc4460>), ('default_bool', <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc4490>), ('default_string', <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc44c0>), ('default_bytes', <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc44f0>)]
+[DEBUG] [2020-08-27 15:32:48,766] [parse_proto.py:878] [_process_field_types_by_item] PPROT MSG-FIELD-PROC - Processing: ('default_uint32', <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc4430>)
+[INFO] [2020-08-27 15:32:48,766] [parse_proto.py:750] [_get_object_full_name] PPROT FULLNM - Objects full name is: example_api_v2.request_b.b_test_request.default_uint32
+[INFO] [2020-08-27 15:32:48,767] [parse_proto.py:518] [_field_is_message_type] PPROT MSGFIELD - Field is not a message type at object: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc4430>
+[INFO] [2020-08-27 15:32:48,767] [parse_proto.py:659] [_get_label] PPROT LABEL - Field label is, the object is: 1
+[DEBUG] [2020-08-27 15:32:48,767] [parse_proto.py:531] [_field_type] PPROT MSGFIELD - Field_type: 13
+[INFO] [2020-08-27 15:32:48,767] [parse_proto.py:620] [_get_default_value] PPROT HDEFVAL - Field has default value, the object is: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc4430>
+[INFO] [2020-08-27 15:32:48,767] [parse_proto.py:725] [_extensions_by_name_items] PPROT HASEXT - Field has not got extension value, the object is: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc4430>
+[DEBUG] [2020-08-27 15:32:48,767] [parse_proto.py:891] [_process_field_types_by_item] PPROT-FIELD-SKEL - name: default_uint32
+[DEBUG] [2020-08-27 15:32:48,767] [parse_proto.py:892] [_process_field_types_by_item] PPROT-FIELD-SKEL - object_curr: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc4430>
+[DEBUG] [2020-08-27 15:32:48,767] [parse_proto.py:893] [_process_field_types_by_item] PPROT-FIELD-SKEL - message: None
+[DEBUG] [2020-08-27 15:32:48,767] [parse_proto.py:894] [_process_field_types_by_item] PPROT-FIELD-SKEL - full_name: example_api_v2.request_b.b_test_request.default_uint32
+[DEBUG] [2020-08-27 15:32:48,767] [parse_proto.py:895] [_process_field_types_by_item] PPROT-FIELD-SKEL - label: 1
+[DEBUG] [2020-08-27 15:32:48,768] [parse_proto.py:896] [_process_field_types_by_item] PPROT-FIELD-SKEL - field_type: 13
+[DEBUG] [2020-08-27 15:32:48,768] [parse_proto.py:897] [_process_field_types_by_item] PPROT-FIELD-SKEL - default_value: 43
+[DEBUG] [2020-08-27 15:32:48,768] [parse_proto.py:898] [_process_field_types_by_item] PPROT-FIELD-SKEL - extensions: None
+[DEBUG] [2020-08-27 15:32:48,768] [parse_proto.py:878] [_process_field_types_by_item] PPROT MSG-FIELD-PROC - Processing: ('default_uint64', <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc4460>)
+[INFO] [2020-08-27 15:32:48,768] [parse_proto.py:750] [_get_object_full_name] PPROT FULLNM - Objects full name is: example_api_v2.request_b.b_test_request.default_uint64
+[INFO] [2020-08-27 15:32:48,768] [parse_proto.py:518] [_field_is_message_type] PPROT MSGFIELD - Field is not a message type at object: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc4460>
+[INFO] [2020-08-27 15:32:48,768] [parse_proto.py:659] [_get_label] PPROT LABEL - Field label is, the object is: 1
+[DEBUG] [2020-08-27 15:32:48,768] [parse_proto.py:531] [_field_type] PPROT MSGFIELD - Field_type: 4
+[INFO] [2020-08-27 15:32:48,768] [parse_proto.py:620] [_get_default_value] PPROT HDEFVAL - Field has default value, the object is: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc4460>
+[INFO] [2020-08-27 15:32:48,768] [parse_proto.py:725] [_extensions_by_name_items] PPROT HASEXT - Field has not got extension value, the object is: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc4460>
+[DEBUG] [2020-08-27 15:32:48,768] [parse_proto.py:891] [_process_field_types_by_item] PPROT-FIELD-SKEL - name: default_uint64
+[DEBUG] [2020-08-27 15:32:48,769] [parse_proto.py:892] [_process_field_types_by_item] PPROT-FIELD-SKEL - object_curr: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc4460>
+[DEBUG] [2020-08-27 15:32:48,769] [parse_proto.py:893] [_process_field_types_by_item] PPROT-FIELD-SKEL - message: None
+[DEBUG] [2020-08-27 15:32:48,769] [parse_proto.py:894] [_process_field_types_by_item] PPROT-FIELD-SKEL - full_name: example_api_v2.request_b.b_test_request.default_uint64
+[DEBUG] [2020-08-27 15:32:48,769] [parse_proto.py:895] [_process_field_types_by_item] PPROT-FIELD-SKEL - label: 1
+[DEBUG] [2020-08-27 15:32:48,769] [parse_proto.py:896] [_process_field_types_by_item] PPROT-FIELD-SKEL - field_type: 4
+[DEBUG] [2020-08-27 15:32:48,769] [parse_proto.py:897] [_process_field_types_by_item] PPROT-FIELD-SKEL - default_value: 44
+[DEBUG] [2020-08-27 15:32:48,769] [parse_proto.py:898] [_process_field_types_by_item] PPROT-FIELD-SKEL - extensions: None
+[DEBUG] [2020-08-27 15:32:48,770] [parse_proto.py:878] [_process_field_types_by_item] PPROT MSG-FIELD-PROC - Processing: ('default_bool', <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc4490>)
+[INFO] [2020-08-27 15:32:48,770] [parse_proto.py:750] [_get_object_full_name] PPROT FULLNM - Objects full name is: example_api_v2.request_b.b_test_request.default_bool
+[INFO] [2020-08-27 15:32:48,770] [parse_proto.py:518] [_field_is_message_type] PPROT MSGFIELD - Field is not a message type at object: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc4490>
+[INFO] [2020-08-27 15:32:48,770] [parse_proto.py:659] [_get_label] PPROT LABEL - Field label is, the object is: 1
+[DEBUG] [2020-08-27 15:32:48,770] [parse_proto.py:531] [_field_type] PPROT MSGFIELD - Field_type: 8
+[INFO] [2020-08-27 15:32:48,770] [parse_proto.py:620] [_get_default_value] PPROT HDEFVAL - Field has default value, the object is: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc4490>
+[INFO] [2020-08-27 15:32:48,770] [parse_proto.py:725] [_extensions_by_name_items] PPROT HASEXT - Field has not got extension value, the object is: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc4490>
+[DEBUG] [2020-08-27 15:32:48,770] [parse_proto.py:891] [_process_field_types_by_item] PPROT-FIELD-SKEL - name: default_bool
+[DEBUG] [2020-08-27 15:32:48,770] [parse_proto.py:892] [_process_field_types_by_item] PPROT-FIELD-SKEL - object_curr: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc4490>
+[DEBUG] [2020-08-27 15:32:48,770] [parse_proto.py:893] [_process_field_types_by_item] PPROT-FIELD-SKEL - message: None
+[DEBUG] [2020-08-27 15:32:48,771] [parse_proto.py:894] [_process_field_types_by_item] PPROT-FIELD-SKEL - full_name: example_api_v2.request_b.b_test_request.default_bool
+[DEBUG] [2020-08-27 15:32:48,771] [parse_proto.py:895] [_process_field_types_by_item] PPROT-FIELD-SKEL - label: 1
+[DEBUG] [2020-08-27 15:32:48,771] [parse_proto.py:896] [_process_field_types_by_item] PPROT-FIELD-SKEL - field_type: 8
+[DEBUG] [2020-08-27 15:32:48,771] [parse_proto.py:897] [_process_field_types_by_item] PPROT-FIELD-SKEL - default_value: True
+[DEBUG] [2020-08-27 15:32:48,771] [parse_proto.py:898] [_process_field_types_by_item] PPROT-FIELD-SKEL - extensions: None
+[DEBUG] [2020-08-27 15:32:48,771] [parse_proto.py:878] [_process_field_types_by_item] PPROT MSG-FIELD-PROC - Processing: ('default_string', <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc44c0>)
+[INFO] [2020-08-27 15:32:48,771] [parse_proto.py:750] [_get_object_full_name] PPROT FULLNM - Objects full name is: example_api_v2.request_b.b_test_request.default_string
+[INFO] [2020-08-27 15:32:48,771] [parse_proto.py:518] [_field_is_message_type] PPROT MSGFIELD - Field is not a message type at object: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc44c0>
+[INFO] [2020-08-27 15:32:48,771] [parse_proto.py:659] [_get_label] PPROT LABEL - Field label is, the object is: 1
+[DEBUG] [2020-08-27 15:32:48,771] [parse_proto.py:531] [_field_type] PPROT MSGFIELD - Field_type: 9
+[INFO] [2020-08-27 15:32:48,771] [parse_proto.py:620] [_get_default_value] PPROT HDEFVAL - Field has default value, the object is: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc44c0>
+[INFO] [2020-08-27 15:32:48,772] [parse_proto.py:725] [_extensions_by_name_items] PPROT HASEXT - Field has not got extension value, the object is: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc44c0>
+[DEBUG] [2020-08-27 15:32:48,772] [parse_proto.py:891] [_process_field_types_by_item] PPROT-FIELD-SKEL - name: default_string
+[DEBUG] [2020-08-27 15:32:48,772] [parse_proto.py:892] [_process_field_types_by_item] PPROT-FIELD-SKEL - object_curr: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc44c0>
+[DEBUG] [2020-08-27 15:32:48,772] [parse_proto.py:893] [_process_field_types_by_item] PPROT-FIELD-SKEL - message: None
+[DEBUG] [2020-08-27 15:32:48,772] [parse_proto.py:894] [_process_field_types_by_item] PPROT-FIELD-SKEL - full_name: example_api_v2.request_b.b_test_request.default_string
+[DEBUG] [2020-08-27 15:32:48,772] [parse_proto.py:895] [_process_field_types_by_item] PPROT-FIELD-SKEL - label: 1
+[DEBUG] [2020-08-27 15:32:48,772] [parse_proto.py:896] [_process_field_types_by_item] PPROT-FIELD-SKEL - field_type: 9
+[DEBUG] [2020-08-27 15:32:48,772] [parse_proto.py:897] [_process_field_types_by_item] PPROT-FIELD-SKEL - default_value: hello
+[DEBUG] [2020-08-27 15:32:48,772] [parse_proto.py:898] [_process_field_types_by_item] PPROT-FIELD-SKEL - extensions: None
+[DEBUG] [2020-08-27 15:32:48,773] [parse_proto.py:878] [_process_field_types_by_item] PPROT MSG-FIELD-PROC - Processing: ('default_bytes', <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc44f0>)
+[INFO] [2020-08-27 15:32:48,773] [parse_proto.py:750] [_get_object_full_name] PPROT FULLNM - Objects full name is: example_api_v2.request_b.b_test_request.default_bytes
+[INFO] [2020-08-27 15:32:48,773] [parse_proto.py:518] [_field_is_message_type] PPROT MSGFIELD - Field is not a message type at object: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc44f0>
+[INFO] [2020-08-27 15:32:48,773] [parse_proto.py:659] [_get_label] PPROT LABEL - Field label is, the object is: 1
+[DEBUG] [2020-08-27 15:32:48,773] [parse_proto.py:531] [_field_type] PPROT MSGFIELD - Field_type: 12
+[INFO] [2020-08-27 15:32:48,773] [parse_proto.py:620] [_get_default_value] PPROT HDEFVAL - Field has default value, the object is: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc44f0>
+[INFO] [2020-08-27 15:32:48,773] [parse_proto.py:725] [_extensions_by_name_items] PPROT HASEXT - Field has not got extension value, the object is: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc44f0>
+[DEBUG] [2020-08-27 15:32:48,773] [parse_proto.py:891] [_process_field_types_by_item] PPROT-FIELD-SKEL - name: default_bytes
+[DEBUG] [2020-08-27 15:32:48,773] [parse_proto.py:892] [_process_field_types_by_item] PPROT-FIELD-SKEL - object_curr: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc44f0>
+[DEBUG] [2020-08-27 15:32:48,774] [parse_proto.py:893] [_process_field_types_by_item] PPROT-FIELD-SKEL - message: None
+[DEBUG] [2020-08-27 15:32:48,774] [parse_proto.py:894] [_process_field_types_by_item] PPROT-FIELD-SKEL - full_name: example_api_v2.request_b.b_test_request.default_bytes
+[DEBUG] [2020-08-27 15:32:48,774] [parse_proto.py:895] [_process_field_types_by_item] PPROT-FIELD-SKEL - label: 1
+[DEBUG] [2020-08-27 15:32:48,774] [parse_proto.py:896] [_process_field_types_by_item] PPROT-FIELD-SKEL - field_type: 12
+[DEBUG] [2020-08-27 15:32:48,774] [parse_proto.py:897] [_process_field_types_by_item] PPROT-FIELD-SKEL - default_value: b'world'
+[DEBUG] [2020-08-27 15:32:48,774] [parse_proto.py:898] [_process_field_types_by_item] PPROT-FIELD-SKEL - extensions: None
+[INFO] [2020-08-27 15:32:48,774] [parse_proto.py:351] [_enum_types_by_name] PPROT ENUM - Enum_types_by_name: []
+[DEBUG] [2020-08-27 15:32:48,774] [parse_proto.py:849] [_process_message_types_by_item] PPROT-SKEL - Collecting data for the skeleton.
+[DEBUG] [2020-08-27 15:32:48,774] [parse_proto.py:850] [_process_message_types_by_item] PPROT-SKEL - name: b_test_request
+[DEBUG] [2020-08-27 15:32:48,775] [parse_proto.py:851] [_process_message_types_by_item] PPROT-SKEL - object_derived: <google.protobuf.pyext._message.MessageDescriptor object at 0x10ecc41f0>
+[DEBUG] [2020-08-27 15:32:48,775] [parse_proto.py:852] [_process_message_types_by_item] PPROT-SKEL - object_curr: <google.protobuf.pyext._message.MessageDescriptor object at 0x10ecc41f0>
+[DEBUG] [2020-08-27 15:32:48,775] [parse_proto.py:853] [_process_message_types_by_item] PPROT-SKEL - full_name: example_api_v2.request_b.b_test_request
+[DEBUG] [2020-08-27 15:32:48,775] [parse_proto.py:854] [_process_message_types_by_item] PPROT-SKEL - message_type: False
+[DEBUG] [2020-08-27 15:32:48,775] [parse_proto.py:855] [_process_message_types_by_item] PPROT-SKEL - ancestor: main_pb2.py
+[DEBUG] [2020-08-27 15:32:48,775] [parse_proto.py:856] [_process_message_types_by_item] PPROT-SKEL - has_nested_type: False
+[DEBUG] [2020-08-27 15:32:48,775] [parse_proto.py:857] [_process_message_types_by_item] PPROT-SKEL - has_field: True
+[DEBUG] [2020-08-27 15:32:48,775] [parse_proto.py:858] [_process_message_types_by_item] PPROT-SKEL - has_enum: False
+[DEBUG] [2020-08-27 15:32:48,775] [parse_proto.py:859] [_process_message_types_by_item] PPROT-SKEL - nested_type: []
+[DEBUG] [2020-08-27 15:32:48,829] [parse_proto.py:860] [_process_message_types_by_item] PPROT-SKEL - fields: [<framework.models.data_struct.field.Field object at 0x10ecc4520>, <framework.models.data_struct.field.Field object at 0x10ecc4550>, <framework.models.data_struct.field.Field object at 0x10ecc4580>, <framework.models.data_struct.field.Field object at 0x10ecc45b0>, <framework.models.data_struct.field.Field object at 0x10ecc4610>]
+[DEBUG] [2020-08-27 15:32:48,829] [parse_proto.py:861] [_process_message_types_by_item] PPROT-SKEL - enums: []
+[INFO] [2020-08-27 15:32:48,829] [parse_proto.py:351] [_enum_types_by_name] PPROT ENUM - Enum_types_by_name: [('FirstLevelEnum', <google.protobuf.pyext._message.EnumDescriptor object at 0x10ec8cac0>), ('FirstLevelEnumSecond', <google.protobuf.pyext._message.EnumDescriptor object at 0x10ec8ca90>)]
+[DEBUG] [2020-08-27 15:32:48,829] [parse_proto.py:849] [_process_message_types_by_item] PPROT-SKEL - Collecting data for the skeleton.
+[DEBUG] [2020-08-27 15:32:48,830] [parse_proto.py:850] [_process_message_types_by_item] PPROT-SKEL - name: TestRequest
+[DEBUG] [2020-08-27 15:32:48,830] [parse_proto.py:851] [_process_message_types_by_item] PPROT-SKEL - object_derived: <class 'main_pb2.TestRequest'>
+[DEBUG] [2020-08-27 15:32:48,830] [parse_proto.py:852] [_process_message_types_by_item] PPROT-SKEL - object_curr: <google.protobuf.pyext._message.MessageDescriptor object at 0x10ecc4280>
+[DEBUG] [2020-08-27 15:32:48,830] [parse_proto.py:853] [_process_message_types_by_item] PPROT-SKEL - full_name: example_api_v2.TestRequest
+[DEBUG] [2020-08-27 15:32:48,830] [parse_proto.py:854] [_process_message_types_by_item] PPROT-SKEL - message_type: False
+[DEBUG] [2020-08-27 15:32:48,830] [parse_proto.py:855] [_process_message_types_by_item] PPROT-SKEL - ancestor: main_pb2.py
+[DEBUG] [2020-08-27 15:32:48,830] [parse_proto.py:856] [_process_message_types_by_item] PPROT-SKEL - has_nested_type: True
+[DEBUG] [2020-08-27 15:32:48,830] [parse_proto.py:857] [_process_message_types_by_item] PPROT-SKEL - has_field: True
+[DEBUG] [2020-08-27 15:32:48,831] [parse_proto.py:858] [_process_message_types_by_item] PPROT-SKEL - has_enum: True
+[DEBUG] [2020-08-27 15:32:48,831] [parse_proto.py:859] [_process_message_types_by_item] PPROT-SKEL - nested_type: [('TestRequiredRequestData', <google.protobuf.pyext._message.MessageDescriptor object at 0x10ecc41c0>)]
+[DEBUG] [2020-08-27 15:32:48,831] [parse_proto.py:860] [_process_message_types_by_item] PPROT-SKEL - fields: [<framework.models.data_struct.field.Field object at 0x10ec8cd30>, <framework.models.data_struct.field.Field object at 0x10ec8c970>, <framework.models.data_struct.field.Field object at 0x10ecc42b0>, <framework.models.data_struct.field.Field object at 0x10ecc4250>, <framework.models.data_struct.field.Field object at 0x10ecc42e0>, <framework.models.data_struct.field.Field object at 0x10ecc4340>, <framework.models.data_struct.field.Field object at 0x10ecc4310>, <framework.models.data_struct.field.Field object at 0x10ecc4370>, <framework.models.data_struct.field.Field object at 0x10ecc43a0>]
+[DEBUG] [2020-08-27 15:32:48,831] [parse_proto.py:861] [_process_message_types_by_item] PPROT-SKEL - enums: [<framework.models.data_struct.enum.Enum object at 0x10ecc4400>, <framework.models.data_struct.enum.Enum object at 0x10ecc4670>]
+[INFO] [2020-08-27 15:32:48,831] [parse_proto.py:778] [_recursion_nested_types_by_items] PPROT-MSGREC - 100 Control entered into wrapper method to start the recursion on message: TestRequest
+[INFO] [2020-08-27 15:32:48,831] [parse_proto.py:743] [_get_object_full_name] PPROT FULLNM - Objects full name is: example_api_v2.TestRequest
+[INFO] [2020-08-27 15:32:48,832] [parse_proto.py:266] [_has_nested_types_by_name_keys] PPROT HNSTD - It has Nested_types_by_name: ['TestRequiredRequestData']
+[INFO] [2020-08-27 15:32:48,832] [parse_proto.py:302] [_nested_types_by_name_items] PPROT NSTD - Nested_types_by_name: [('TestRequiredRequestData', <google.protobuf.pyext._message.MessageDescriptor object at 0x10ecc41c0>)]
+[DEBUG] [2020-08-27 15:32:48,832] [parse_proto.py:793] [_do_recurse_nested] PPROT-NESREC - 101 the actual list of nesteds [[('TestRequiredRequestData', <google.protobuf.pyext._message.MessageDescriptor object at 0x10ecc41c0>)]]
+[DEBUG] [2020-08-27 15:32:48,832] [parse_proto.py:794] [_do_recurse_nested] PPROT-NESREC - 102 currently processing TestRequiredRequestData nested message.
+[INFO] [2020-08-27 15:32:48,832] [parse_proto.py:750] [_get_object_full_name] PPROT FULLNM - Objects full name is: example_api_v2.TestRequest.TestRequiredRequestData
+[INFO] [2020-08-27 15:32:48,832] [parse_proto.py:518] [_field_is_message_type] PPROT MSGFIELD - Field is not a message type at object: <google.protobuf.pyext._message.MessageDescriptor object at 0x10ecc41c0>
+[INFO] [2020-08-27 15:32:48,832] [parse_proto.py:276] [_has_nested_types_by_name_keys] PPROT HNSTD - It has Nested_types_by_name: ['TestRequiredRequiredMessage', 'TestImportedaRequest']
+[INFO] [2020-08-27 15:32:48,832] [parse_proto.py:441] [_has_field] PPROT HFIELD - Fields_by_name: ['a_req', 'dummy2_req', 'b_req']
+[INFO] [2020-08-27 15:32:48,833] [parse_proto.py:331] [_has_enum_types_by_name] PPROT HENUM - Enum_types_by_name: [('ForeignEnumProto2', <google.protobuf.pyext._message.EnumDescriptor object at 0x10ec92ac0>)]
+[INFO] [2020-08-27 15:32:48,833] [parse_proto.py:309] [_nested_types_by_name_items] PPROT NSTD - Nested_types_by_name: [('TestRequiredRequiredMessage', <google.protobuf.pyext._message.MessageDescriptor object at 0x10ec8cdf0>), ('TestImportedaRequest', <google.protobuf.pyext._message.MessageDescriptor object at 0x10ec8ce80>)]
+[INFO] [2020-08-27 15:32:48,833] [parse_proto.py:484] [_fields_by_name_items] PPROT FIELD - fields_by_name: [('a_req', <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc4820>), ('dummy2_req', <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc4850>), ('b_req', <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc4880>)]
+[DEBUG] [2020-08-27 15:32:48,833] [parse_proto.py:878] [_process_field_types_by_item] PPROT MSG-FIELD-PROC - Processing: ('a_req', <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc4820>)
+[INFO] [2020-08-27 15:32:48,833] [parse_proto.py:750] [_get_object_full_name] PPROT FULLNM - Objects full name is: example_api_v2.TestRequest.TestRequiredRequestData.a_req
+[INFO] [2020-08-27 15:32:48,833] [parse_proto.py:518] [_field_is_message_type] PPROT MSGFIELD - Field is not a message type at object: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc4820>
+[INFO] [2020-08-27 15:32:48,833] [parse_proto.py:659] [_get_label] PPROT LABEL - Field label is, the object is: 2
+[DEBUG] [2020-08-27 15:32:48,833] [parse_proto.py:531] [_field_type] PPROT MSGFIELD - Field_type: 13
+[INFO] [2020-08-27 15:32:48,833] [parse_proto.py:725] [_extensions_by_name_items] PPROT HASEXT - Field has not got extension value, the object is: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc4820>
+[DEBUG] [2020-08-27 15:32:48,834] [parse_proto.py:891] [_process_field_types_by_item] PPROT-FIELD-SKEL - name: a_req
+[DEBUG] [2020-08-27 15:32:48,834] [parse_proto.py:892] [_process_field_types_by_item] PPROT-FIELD-SKEL - object_curr: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc4820>
+[DEBUG] [2020-08-27 15:32:48,834] [parse_proto.py:893] [_process_field_types_by_item] PPROT-FIELD-SKEL - message: None
+[DEBUG] [2020-08-27 15:32:48,834] [parse_proto.py:894] [_process_field_types_by_item] PPROT-FIELD-SKEL - full_name: example_api_v2.TestRequest.TestRequiredRequestData.a_req
+[DEBUG] [2020-08-27 15:32:48,834] [parse_proto.py:895] [_process_field_types_by_item] PPROT-FIELD-SKEL - label: 2
+[DEBUG] [2020-08-27 15:32:48,834] [parse_proto.py:896] [_process_field_types_by_item] PPROT-FIELD-SKEL - field_type: 13
+[DEBUG] [2020-08-27 15:32:48,834] [parse_proto.py:897] [_process_field_types_by_item] PPROT-FIELD-SKEL - default_value: None
+[DEBUG] [2020-08-27 15:32:48,834] [parse_proto.py:898] [_process_field_types_by_item] PPROT-FIELD-SKEL - extensions: None
+[DEBUG] [2020-08-27 15:32:48,834] [parse_proto.py:878] [_process_field_types_by_item] PPROT MSG-FIELD-PROC - Processing: ('dummy2_req', <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc4850>)
+[INFO] [2020-08-27 15:32:48,834] [parse_proto.py:750] [_get_object_full_name] PPROT FULLNM - Objects full name is: example_api_v2.TestRequest.TestRequiredRequestData.dummy2_req
+[INFO] [2020-08-27 15:32:48,834] [parse_proto.py:518] [_field_is_message_type] PPROT MSGFIELD - Field is not a message type at object: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc4850>
+[INFO] [2020-08-27 15:32:48,835] [parse_proto.py:659] [_get_label] PPROT LABEL - Field label is, the object is: 1
+[DEBUG] [2020-08-27 15:32:48,835] [parse_proto.py:531] [_field_type] PPROT MSGFIELD - Field_type: 13
+[INFO] [2020-08-27 15:32:48,835] [parse_proto.py:725] [_extensions_by_name_items] PPROT HASEXT - Field has not got extension value, the object is: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc4850>
+[DEBUG] [2020-08-27 15:32:48,835] [parse_proto.py:891] [_process_field_types_by_item] PPROT-FIELD-SKEL - name: dummy2_req
+[DEBUG] [2020-08-27 15:32:48,835] [parse_proto.py:892] [_process_field_types_by_item] PPROT-FIELD-SKEL - object_curr: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc4850>
+[DEBUG] [2020-08-27 15:32:48,836] [parse_proto.py:893] [_process_field_types_by_item] PPROT-FIELD-SKEL - message: None
+[DEBUG] [2020-08-27 15:32:48,836] [parse_proto.py:894] [_process_field_types_by_item] PPROT-FIELD-SKEL - full_name: example_api_v2.TestRequest.TestRequiredRequestData.dummy2_req
+[DEBUG] [2020-08-27 15:32:48,836] [parse_proto.py:895] [_process_field_types_by_item] PPROT-FIELD-SKEL - label: 1
+[DEBUG] [2020-08-27 15:32:48,836] [parse_proto.py:896] [_process_field_types_by_item] PPROT-FIELD-SKEL - field_type: 13
+[DEBUG] [2020-08-27 15:32:48,836] [parse_proto.py:897] [_process_field_types_by_item] PPROT-FIELD-SKEL - default_value: None
+[DEBUG] [2020-08-27 15:32:48,836] [parse_proto.py:898] [_process_field_types_by_item] PPROT-FIELD-SKEL - extensions: None
+[DEBUG] [2020-08-27 15:32:48,836] [parse_proto.py:878] [_process_field_types_by_item] PPROT MSG-FIELD-PROC - Processing: ('b_req', <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc4880>)
+[INFO] [2020-08-27 15:32:48,836] [parse_proto.py:750] [_get_object_full_name] PPROT FULLNM - Objects full name is: example_api_v2.TestRequest.TestRequiredRequestData.b_req
+[INFO] [2020-08-27 15:32:48,836] [parse_proto.py:518] [_field_is_message_type] PPROT MSGFIELD - Field is not a message type at object: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc4880>
+[INFO] [2020-08-27 15:32:48,836] [parse_proto.py:659] [_get_label] PPROT LABEL - Field label is, the object is: 2
+[DEBUG] [2020-08-27 15:32:48,837] [parse_proto.py:531] [_field_type] PPROT MSGFIELD - Field_type: 13
+[INFO] [2020-08-27 15:32:48,837] [parse_proto.py:725] [_extensions_by_name_items] PPROT HASEXT - Field has not got extension value, the object is: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc4880>
+[DEBUG] [2020-08-27 15:32:48,837] [parse_proto.py:891] [_process_field_types_by_item] PPROT-FIELD-SKEL - name: b_req
+[DEBUG] [2020-08-27 15:32:48,837] [parse_proto.py:892] [_process_field_types_by_item] PPROT-FIELD-SKEL - object_curr: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc4880>
+[DEBUG] [2020-08-27 15:32:48,837] [parse_proto.py:893] [_process_field_types_by_item] PPROT-FIELD-SKEL - message: None
+[DEBUG] [2020-08-27 15:32:48,837] [parse_proto.py:894] [_process_field_types_by_item] PPROT-FIELD-SKEL - full_name: example_api_v2.TestRequest.TestRequiredRequestData.b_req
+[DEBUG] [2020-08-27 15:32:48,837] [parse_proto.py:895] [_process_field_types_by_item] PPROT-FIELD-SKEL - label: 2
+[DEBUG] [2020-08-27 15:32:48,837] [parse_proto.py:896] [_process_field_types_by_item] PPROT-FIELD-SKEL - field_type: 13
+[DEBUG] [2020-08-27 15:32:48,837] [parse_proto.py:897] [_process_field_types_by_item] PPROT-FIELD-SKEL - default_value: None
+[DEBUG] [2020-08-27 15:32:48,837] [parse_proto.py:898] [_process_field_types_by_item] PPROT-FIELD-SKEL - extensions: None
+[INFO] [2020-08-27 15:32:48,838] [parse_proto.py:351] [_enum_types_by_name] PPROT ENUM - Enum_types_by_name: [('ForeignEnumProto2', <google.protobuf.pyext._message.EnumDescriptor object at 0x10ec92ac0>)]
+[DEBUG] [2020-08-27 15:32:48,838] [parse_proto.py:849] [_process_message_types_by_item] PPROT-SKEL - Collecting data for the skeleton.
+[DEBUG] [2020-08-27 15:32:48,838] [parse_proto.py:850] [_process_message_types_by_item] PPROT-SKEL - name: TestRequiredRequestData
+[DEBUG] [2020-08-27 15:32:48,838] [parse_proto.py:851] [_process_message_types_by_item] PPROT-SKEL - object_derived: <google.protobuf.pyext._message.MessageDescriptor object at 0x10ecc41c0>
+[DEBUG] [2020-08-27 15:32:48,838] [parse_proto.py:852] [_process_message_types_by_item] PPROT-SKEL - object_curr: <google.protobuf.pyext._message.MessageDescriptor object at 0x10ecc41c0>
+[DEBUG] [2020-08-27 15:32:48,838] [parse_proto.py:853] [_process_message_types_by_item] PPROT-SKEL - full_name: example_api_v2.TestRequest.TestRequiredRequestData
+[DEBUG] [2020-08-27 15:32:48,838] [parse_proto.py:854] [_process_message_types_by_item] PPROT-SKEL - message_type: False
+[DEBUG] [2020-08-27 15:32:48,838] [parse_proto.py:855] [_process_message_types_by_item] PPROT-SKEL - ancestor: main_pb2.py
+[DEBUG] [2020-08-27 15:32:48,838] [parse_proto.py:856] [_process_message_types_by_item] PPROT-SKEL - has_nested_type: True
+[DEBUG] [2020-08-27 15:32:48,838] [parse_proto.py:857] [_process_message_types_by_item] PPROT-SKEL - has_field: True
+[DEBUG] [2020-08-27 15:32:48,838] [parse_proto.py:858] [_process_message_types_by_item] PPROT-SKEL - has_enum: True
+[DEBUG] [2020-08-27 15:32:48,839] [parse_proto.py:859] [_process_message_types_by_item] PPROT-SKEL - nested_type: [('TestRequiredRequiredMessage', <google.protobuf.pyext._message.MessageDescriptor object at 0x10ec8cdf0>), ('TestImportedaRequest', <google.protobuf.pyext._message.MessageDescriptor object at 0x10ec8ce80>)]
+[DEBUG] [2020-08-27 15:32:48,839] [parse_proto.py:860] [_process_message_types_by_item] PPROT-SKEL - fields: [<framework.models.data_struct.field.Field object at 0x10ecc48b0>, <framework.models.data_struct.field.Field object at 0x10ecc48e0>, <framework.models.data_struct.field.Field object at 0x10ecc4910>]
+[DEBUG] [2020-08-27 15:32:48,839] [parse_proto.py:861] [_process_message_types_by_item] PPROT-SKEL - enums: [<framework.models.data_struct.enum.Enum object at 0x10ecc4940>]
+[INFO] [2020-08-27 15:32:48,839] [parse_proto.py:743] [_get_object_full_name] PPROT FULLNM - Objects full name is: example_api_v2.TestRequest.TestRequiredRequestData
+[INFO] [2020-08-27 15:32:48,839] [parse_proto.py:266] [_has_nested_types_by_name_keys] PPROT HNSTD - It has Nested_types_by_name: ['TestRequiredRequiredMessage', 'TestImportedaRequest']
+[INFO] [2020-08-27 15:32:48,839] [parse_proto.py:302] [_nested_types_by_name_items] PPROT NSTD - Nested_types_by_name: [('TestRequiredRequiredMessage', <google.protobuf.pyext._message.MessageDescriptor object at 0x10ec8cdf0>), ('TestImportedaRequest', <google.protobuf.pyext._message.MessageDescriptor object at 0x10ec8ce80>)]
+[DEBUG] [2020-08-27 15:32:48,839] [parse_proto.py:793] [_do_recurse_nested] PPROT-NESREC - 101 the actual list of nesteds [[('TestRequiredRequestData', <google.protobuf.pyext._message.MessageDescriptor object at 0x10ecc41c0>)], [('TestRequiredRequiredMessage', <google.protobuf.pyext._message.MessageDescriptor object at 0x10ec8cdf0>), ('TestImportedaRequest', <google.protobuf.pyext._message.MessageDescriptor object at 0x10ec8ce80>)]]
+[DEBUG] [2020-08-27 15:32:48,839] [parse_proto.py:794] [_do_recurse_nested] PPROT-NESREC - 102 currently processing TestRequiredRequiredMessage nested message.
+[INFO] [2020-08-27 15:32:48,839] [parse_proto.py:750] [_get_object_full_name] PPROT FULLNM - Objects full name is: example_api_v2.TestRequest.TestRequiredRequestData.TestRequiredRequiredMessage
+[INFO] [2020-08-27 15:32:48,839] [parse_proto.py:518] [_field_is_message_type] PPROT MSGFIELD - Field is not a message type at object: <google.protobuf.pyext._message.MessageDescriptor object at 0x10ec8cdf0>
+[INFO] [2020-08-27 15:32:48,839] [parse_proto.py:441] [_has_field] PPROT HFIELD - Fields_by_name: ['optional_message', 'repeated_message', 'required_message']
+[INFO] [2020-08-27 15:32:48,840] [parse_proto.py:309] [_nested_types_by_name_items] PPROT NSTD - Nested_types_by_name: []
+[INFO] [2020-08-27 15:32:48,840] [parse_proto.py:484] [_fields_by_name_items] PPROT FIELD - fields_by_name: [('optional_message', <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc4a00>), ('repeated_message', <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc4a30>), ('required_message', <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc4a60>)]
+[DEBUG] [2020-08-27 15:32:48,840] [parse_proto.py:878] [_process_field_types_by_item] PPROT MSG-FIELD-PROC - Processing: ('optional_message', <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc4a00>)
+[INFO] [2020-08-27 15:32:48,840] [parse_proto.py:750] [_get_object_full_name] PPROT FULLNM - Objects full name is: example_api_v2.TestRequest.TestRequiredRequestData.TestRequiredRequiredMessage.optional_message
+[INFO] [2020-08-27 15:32:48,840] [parse_proto.py:518] [_field_is_message_type] PPROT MSGFIELD - Field is not a message type at object: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc4a00>
+[INFO] [2020-08-27 15:32:48,840] [parse_proto.py:659] [_get_label] PPROT LABEL - Field label is, the object is: 1
+[DEBUG] [2020-08-27 15:32:48,840] [parse_proto.py:531] [_field_type] PPROT MSGFIELD - Field_type: 11
+[INFO] [2020-08-27 15:32:48,840] [parse_proto.py:725] [_extensions_by_name_items] PPROT HASEXT - Field has not got extension value, the object is: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc4a00>
+[DEBUG] [2020-08-27 15:32:48,840] [parse_proto.py:891] [_process_field_types_by_item] PPROT-FIELD-SKEL - name: optional_message
+[DEBUG] [2020-08-27 15:32:48,841] [parse_proto.py:892] [_process_field_types_by_item] PPROT-FIELD-SKEL - object_curr: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc4a00>
+[DEBUG] [2020-08-27 15:32:48,841] [parse_proto.py:893] [_process_field_types_by_item] PPROT-FIELD-SKEL - message: None
+[DEBUG] [2020-08-27 15:32:48,841] [parse_proto.py:894] [_process_field_types_by_item] PPROT-FIELD-SKEL - full_name: example_api_v2.TestRequest.TestRequiredRequestData.TestRequiredRequiredMessage.optional_message
+[DEBUG] [2020-08-27 15:32:48,841] [parse_proto.py:895] [_process_field_types_by_item] PPROT-FIELD-SKEL - label: 1
+[DEBUG] [2020-08-27 15:32:48,841] [parse_proto.py:896] [_process_field_types_by_item] PPROT-FIELD-SKEL - field_type: 11
+[DEBUG] [2020-08-27 15:32:48,841] [parse_proto.py:897] [_process_field_types_by_item] PPROT-FIELD-SKEL - default_value: None
+[DEBUG] [2020-08-27 15:32:48,841] [parse_proto.py:898] [_process_field_types_by_item] PPROT-FIELD-SKEL - extensions: None
+[INFO] [2020-08-27 15:32:48,842] [parse_proto.py:591] [_imported_message_name_by_items] PPROT IMPORTEDMSG - Imported message objects: [('b_test_request', <google.protobuf.pyext._message.MessageDescriptor object at 0x10ecc41f0>)]
+[INFO] [2020-08-27 15:32:48,842] [parse_proto.py:750] [_get_object_full_name] PPROT FULLNM - Objects full name is: example_api_v2.request_b.b_test_request
+[INFO] [2020-08-27 15:32:48,842] [parse_proto.py:518] [_field_is_message_type] PPROT MSGFIELD - Field is not a message type at object: <google.protobuf.pyext._message.MessageDescriptor object at 0x10ecc41f0>
+[INFO] [2020-08-27 15:32:48,842] [parse_proto.py:441] [_has_field] PPROT HFIELD - Fields_by_name: ['default_uint32', 'default_uint64', 'default_bool', 'default_string', 'default_bytes']
+[INFO] [2020-08-27 15:32:48,894] [parse_proto.py:309] [_nested_types_by_name_items] PPROT NSTD - Nested_types_by_name: []
+[INFO] [2020-08-27 15:32:48,894] [parse_proto.py:484] [_fields_by_name_items] PPROT FIELD - fields_by_name: [('default_uint32', <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc4430>), ('default_uint64', <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc4460>), ('default_bool', <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc4490>), ('default_string', <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc44c0>), ('default_bytes', <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc44f0>)]
+[DEBUG] [2020-08-27 15:32:48,894] [parse_proto.py:878] [_process_field_types_by_item] PPROT MSG-FIELD-PROC - Processing: ('default_uint32', <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc4430>)
+[INFO] [2020-08-27 15:32:48,894] [parse_proto.py:750] [_get_object_full_name] PPROT FULLNM - Objects full name is: example_api_v2.request_b.b_test_request.default_uint32
+[INFO] [2020-08-27 15:32:48,894] [parse_proto.py:518] [_field_is_message_type] PPROT MSGFIELD - Field is not a message type at object: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc4430>
+[INFO] [2020-08-27 15:32:48,895] [parse_proto.py:659] [_get_label] PPROT LABEL - Field label is, the object is: 1
+[DEBUG] [2020-08-27 15:32:48,895] [parse_proto.py:531] [_field_type] PPROT MSGFIELD - Field_type: 13
+[INFO] [2020-08-27 15:32:48,895] [parse_proto.py:620] [_get_default_value] PPROT HDEFVAL - Field has default value, the object is: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc4430>
+[INFO] [2020-08-27 15:32:48,895] [parse_proto.py:725] [_extensions_by_name_items] PPROT HASEXT - Field has not got extension value, the object is: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc4430>
+[DEBUG] [2020-08-27 15:32:48,895] [parse_proto.py:891] [_process_field_types_by_item] PPROT-FIELD-SKEL - name: default_uint32
+[DEBUG] [2020-08-27 15:32:48,897] [parse_proto.py:892] [_process_field_types_by_item] PPROT-FIELD-SKEL - object_curr: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc4430>
+[DEBUG] [2020-08-27 15:32:48,897] [parse_proto.py:893] [_process_field_types_by_item] PPROT-FIELD-SKEL - message: None
+[DEBUG] [2020-08-27 15:32:48,898] [parse_proto.py:894] [_process_field_types_by_item] PPROT-FIELD-SKEL - full_name: example_api_v2.request_b.b_test_request.default_uint32
+[DEBUG] [2020-08-27 15:32:48,898] [parse_proto.py:895] [_process_field_types_by_item] PPROT-FIELD-SKEL - label: 1
+[DEBUG] [2020-08-27 15:32:48,898] [parse_proto.py:896] [_process_field_types_by_item] PPROT-FIELD-SKEL - field_type: 13
+[DEBUG] [2020-08-27 15:32:48,898] [parse_proto.py:897] [_process_field_types_by_item] PPROT-FIELD-SKEL - default_value: 43
+[DEBUG] [2020-08-27 15:32:48,899] [parse_proto.py:898] [_process_field_types_by_item] PPROT-FIELD-SKEL - extensions: None
+[DEBUG] [2020-08-27 15:32:48,899] [parse_proto.py:878] [_process_field_types_by_item] PPROT MSG-FIELD-PROC - Processing: ('default_uint64', <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc4460>)
+[INFO] [2020-08-27 15:32:48,899] [parse_proto.py:750] [_get_object_full_name] PPROT FULLNM - Objects full name is: example_api_v2.request_b.b_test_request.default_uint64
+[INFO] [2020-08-27 15:32:48,899] [parse_proto.py:518] [_field_is_message_type] PPROT MSGFIELD - Field is not a message type at object: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc4460>
+[INFO] [2020-08-27 15:32:48,900] [parse_proto.py:659] [_get_label] PPROT LABEL - Field label is, the object is: 1
+[DEBUG] [2020-08-27 15:32:48,900] [parse_proto.py:531] [_field_type] PPROT MSGFIELD - Field_type: 4
+[INFO] [2020-08-27 15:32:48,900] [parse_proto.py:620] [_get_default_value] PPROT HDEFVAL - Field has default value, the object is: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc4460>
+[INFO] [2020-08-27 15:32:48,900] [parse_proto.py:725] [_extensions_by_name_items] PPROT HASEXT - Field has not got extension value, the object is: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc4460>
+[DEBUG] [2020-08-27 15:32:48,900] [parse_proto.py:891] [_process_field_types_by_item] PPROT-FIELD-SKEL - name: default_uint64
+[DEBUG] [2020-08-27 15:32:48,901] [parse_proto.py:892] [_process_field_types_by_item] PPROT-FIELD-SKEL - object_curr: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc4460>
+[DEBUG] [2020-08-27 15:32:48,901] [parse_proto.py:893] [_process_field_types_by_item] PPROT-FIELD-SKEL - message: None
+[DEBUG] [2020-08-27 15:32:48,901] [parse_proto.py:894] [_process_field_types_by_item] PPROT-FIELD-SKEL - full_name: example_api_v2.request_b.b_test_request.default_uint64
+[DEBUG] [2020-08-27 15:32:48,901] [parse_proto.py:895] [_process_field_types_by_item] PPROT-FIELD-SKEL - label: 1
+[DEBUG] [2020-08-27 15:32:48,901] [parse_proto.py:896] [_process_field_types_by_item] PPROT-FIELD-SKEL - field_type: 4
+[DEBUG] [2020-08-27 15:32:48,901] [parse_proto.py:897] [_process_field_types_by_item] PPROT-FIELD-SKEL - default_value: 44
+[DEBUG] [2020-08-27 15:32:48,901] [parse_proto.py:898] [_process_field_types_by_item] PPROT-FIELD-SKEL - extensions: None
+[DEBUG] [2020-08-27 15:32:48,901] [parse_proto.py:878] [_process_field_types_by_item] PPROT MSG-FIELD-PROC - Processing: ('default_bool', <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc4490>)
+[INFO] [2020-08-27 15:32:48,901] [parse_proto.py:750] [_get_object_full_name] PPROT FULLNM - Objects full name is: example_api_v2.request_b.b_test_request.default_bool
+[INFO] [2020-08-27 15:32:48,901] [parse_proto.py:518] [_field_is_message_type] PPROT MSGFIELD - Field is not a message type at object: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc4490>
+[INFO] [2020-08-27 15:32:48,902] [parse_proto.py:659] [_get_label] PPROT LABEL - Field label is, the object is: 1
+[DEBUG] [2020-08-27 15:32:48,902] [parse_proto.py:531] [_field_type] PPROT MSGFIELD - Field_type: 8
+[INFO] [2020-08-27 15:32:48,902] [parse_proto.py:620] [_get_default_value] PPROT HDEFVAL - Field has default value, the object is: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc4490>
+[INFO] [2020-08-27 15:32:48,902] [parse_proto.py:725] [_extensions_by_name_items] PPROT HASEXT - Field has not got extension value, the object is: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc4490>
+[DEBUG] [2020-08-27 15:32:48,902] [parse_proto.py:891] [_process_field_types_by_item] PPROT-FIELD-SKEL - name: default_bool
+[DEBUG] [2020-08-27 15:32:48,902] [parse_proto.py:892] [_process_field_types_by_item] PPROT-FIELD-SKEL - object_curr: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc4490>
+[DEBUG] [2020-08-27 15:32:48,902] [parse_proto.py:893] [_process_field_types_by_item] PPROT-FIELD-SKEL - message: None
+[DEBUG] [2020-08-27 15:32:48,902] [parse_proto.py:894] [_process_field_types_by_item] PPROT-FIELD-SKEL - full_name: example_api_v2.request_b.b_test_request.default_bool
+[DEBUG] [2020-08-27 15:32:48,903] [parse_proto.py:895] [_process_field_types_by_item] PPROT-FIELD-SKEL - label: 1
+[DEBUG] [2020-08-27 15:32:48,903] [parse_proto.py:896] [_process_field_types_by_item] PPROT-FIELD-SKEL - field_type: 8
+[DEBUG] [2020-08-27 15:32:48,903] [parse_proto.py:897] [_process_field_types_by_item] PPROT-FIELD-SKEL - default_value: True
+[DEBUG] [2020-08-27 15:32:48,903] [parse_proto.py:898] [_process_field_types_by_item] PPROT-FIELD-SKEL - extensions: None
+[DEBUG] [2020-08-27 15:32:48,903] [parse_proto.py:878] [_process_field_types_by_item] PPROT MSG-FIELD-PROC - Processing: ('default_string', <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc44c0>)
+[INFO] [2020-08-27 15:32:48,903] [parse_proto.py:750] [_get_object_full_name] PPROT FULLNM - Objects full name is: example_api_v2.request_b.b_test_request.default_string
+[INFO] [2020-08-27 15:32:48,903] [parse_proto.py:518] [_field_is_message_type] PPROT MSGFIELD - Field is not a message type at object: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc44c0>
+[INFO] [2020-08-27 15:32:48,903] [parse_proto.py:659] [_get_label] PPROT LABEL - Field label is, the object is: 1
+[DEBUG] [2020-08-27 15:32:48,903] [parse_proto.py:531] [_field_type] PPROT MSGFIELD - Field_type: 9
+[INFO] [2020-08-27 15:32:48,904] [parse_proto.py:620] [_get_default_value] PPROT HDEFVAL - Field has default value, the object is: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc44c0>
+[INFO] [2020-08-27 15:32:48,904] [parse_proto.py:725] [_extensions_by_name_items] PPROT HASEXT - Field has not got extension value, the object is: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc44c0>
+[DEBUG] [2020-08-27 15:32:48,904] [parse_proto.py:891] [_process_field_types_by_item] PPROT-FIELD-SKEL - name: default_string
+[DEBUG] [2020-08-27 15:32:48,904] [parse_proto.py:892] [_process_field_types_by_item] PPROT-FIELD-SKEL - object_curr: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc44c0>
+[DEBUG] [2020-08-27 15:32:48,904] [parse_proto.py:893] [_process_field_types_by_item] PPROT-FIELD-SKEL - message: None
+[DEBUG] [2020-08-27 15:32:48,904] [parse_proto.py:894] [_process_field_types_by_item] PPROT-FIELD-SKEL - full_name: example_api_v2.request_b.b_test_request.default_string
+[DEBUG] [2020-08-27 15:32:48,904] [parse_proto.py:895] [_process_field_types_by_item] PPROT-FIELD-SKEL - label: 1
+[DEBUG] [2020-08-27 15:32:48,904] [parse_proto.py:896] [_process_field_types_by_item] PPROT-FIELD-SKEL - field_type: 9
+[DEBUG] [2020-08-27 15:32:48,905] [parse_proto.py:897] [_process_field_types_by_item] PPROT-FIELD-SKEL - default_value: hello
+[DEBUG] [2020-08-27 15:32:48,905] [parse_proto.py:898] [_process_field_types_by_item] PPROT-FIELD-SKEL - extensions: None
+[DEBUG] [2020-08-27 15:32:48,905] [parse_proto.py:878] [_process_field_types_by_item] PPROT MSG-FIELD-PROC - Processing: ('default_bytes', <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc44f0>)
+[INFO] [2020-08-27 15:32:48,905] [parse_proto.py:750] [_get_object_full_name] PPROT FULLNM - Objects full name is: example_api_v2.request_b.b_test_request.default_bytes
+[INFO] [2020-08-27 15:32:48,905] [parse_proto.py:518] [_field_is_message_type] PPROT MSGFIELD - Field is not a message type at object: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc44f0>
+[INFO] [2020-08-27 15:32:48,905] [parse_proto.py:659] [_get_label] PPROT LABEL - Field label is, the object is: 1
+[DEBUG] [2020-08-27 15:32:48,905] [parse_proto.py:531] [_field_type] PPROT MSGFIELD - Field_type: 12
+[INFO] [2020-08-27 15:32:48,905] [parse_proto.py:620] [_get_default_value] PPROT HDEFVAL - Field has default value, the object is: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc44f0>
+[INFO] [2020-08-27 15:32:48,905] [parse_proto.py:725] [_extensions_by_name_items] PPROT HASEXT - Field has not got extension value, the object is: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc44f0>
+[DEBUG] [2020-08-27 15:32:48,905] [parse_proto.py:891] [_process_field_types_by_item] PPROT-FIELD-SKEL - name: default_bytes
+[DEBUG] [2020-08-27 15:32:48,906] [parse_proto.py:892] [_process_field_types_by_item] PPROT-FIELD-SKEL - object_curr: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc44f0>
+[DEBUG] [2020-08-27 15:32:48,906] [parse_proto.py:893] [_process_field_types_by_item] PPROT-FIELD-SKEL - message: None
+[DEBUG] [2020-08-27 15:32:48,906] [parse_proto.py:894] [_process_field_types_by_item] PPROT-FIELD-SKEL - full_name: example_api_v2.request_b.b_test_request.default_bytes
+[DEBUG] [2020-08-27 15:32:48,906] [parse_proto.py:895] [_process_field_types_by_item] PPROT-FIELD-SKEL - label: 1
+[DEBUG] [2020-08-27 15:32:48,906] [parse_proto.py:896] [_process_field_types_by_item] PPROT-FIELD-SKEL - field_type: 12
+[DEBUG] [2020-08-27 15:32:48,906] [parse_proto.py:897] [_process_field_types_by_item] PPROT-FIELD-SKEL - default_value: b'world'
+[DEBUG] [2020-08-27 15:32:48,906] [parse_proto.py:898] [_process_field_types_by_item] PPROT-FIELD-SKEL - extensions: None
+[INFO] [2020-08-27 15:32:48,906] [parse_proto.py:351] [_enum_types_by_name] PPROT ENUM - Enum_types_by_name: []
+[DEBUG] [2020-08-27 15:32:48,906] [parse_proto.py:849] [_process_message_types_by_item] PPROT-SKEL - Collecting data for the skeleton.
+[DEBUG] [2020-08-27 15:32:48,906] [parse_proto.py:850] [_process_message_types_by_item] PPROT-SKEL - name: b_test_request
+[DEBUG] [2020-08-27 15:32:48,906] [parse_proto.py:851] [_process_message_types_by_item] PPROT-SKEL - object_derived: <google.protobuf.pyext._message.MessageDescriptor object at 0x10ecc41f0>
+[DEBUG] [2020-08-27 15:32:48,907] [parse_proto.py:852] [_process_message_types_by_item] PPROT-SKEL - object_curr: <google.protobuf.pyext._message.MessageDescriptor object at 0x10ecc41f0>
+[DEBUG] [2020-08-27 15:32:48,907] [parse_proto.py:853] [_process_message_types_by_item] PPROT-SKEL - full_name: example_api_v2.request_b.b_test_request
+[DEBUG] [2020-08-27 15:32:48,907] [parse_proto.py:854] [_process_message_types_by_item] PPROT-SKEL - message_type: False
+[DEBUG] [2020-08-27 15:32:48,907] [parse_proto.py:855] [_process_message_types_by_item] PPROT-SKEL - ancestor: main_pb2.py
+[DEBUG] [2020-08-27 15:32:48,907] [parse_proto.py:856] [_process_message_types_by_item] PPROT-SKEL - has_nested_type: False
+[DEBUG] [2020-08-27 15:32:48,907] [parse_proto.py:857] [_process_message_types_by_item] PPROT-SKEL - has_field: True
+[DEBUG] [2020-08-27 15:32:48,907] [parse_proto.py:858] [_process_message_types_by_item] PPROT-SKEL - has_enum: False
+[DEBUG] [2020-08-27 15:32:48,907] [parse_proto.py:859] [_process_message_types_by_item] PPROT-SKEL - nested_type: []
+[DEBUG] [2020-08-27 15:32:48,907] [parse_proto.py:860] [_process_message_types_by_item] PPROT-SKEL - fields: [<framework.models.data_struct.field.Field object at 0x10ecc4b20>, <framework.models.data_struct.field.Field object at 0x10ecc4b50>, <framework.models.data_struct.field.Field object at 0x10ecc4b80>, <framework.models.data_struct.field.Field object at 0x10ecc4bb0>, <framework.models.data_struct.field.Field object at 0x10ecc4c10>]
+[DEBUG] [2020-08-27 15:32:48,907] [parse_proto.py:861] [_process_message_types_by_item] PPROT-SKEL - enums: []
+[DEBUG] [2020-08-27 15:32:48,908] [parse_proto.py:878] [_process_field_types_by_item] PPROT MSG-FIELD-PROC - Processing: ('repeated_message', <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc4a30>)
+[INFO] [2020-08-27 15:32:48,908] [parse_proto.py:750] [_get_object_full_name] PPROT FULLNM - Objects full name is: example_api_v2.TestRequest.TestRequiredRequestData.TestRequiredRequiredMessage.repeated_message
+[INFO] [2020-08-27 15:32:48,908] [parse_proto.py:518] [_field_is_message_type] PPROT MSGFIELD - Field is not a message type at object: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc4a30>
+[INFO] [2020-08-27 15:32:48,908] [parse_proto.py:659] [_get_label] PPROT LABEL - Field label is, the object is: 3
+[DEBUG] [2020-08-27 15:32:48,908] [parse_proto.py:531] [_field_type] PPROT MSGFIELD - Field_type: 11
+[INFO] [2020-08-27 15:32:48,908] [parse_proto.py:725] [_extensions_by_name_items] PPROT HASEXT - Field has not got extension value, the object is: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc4a30>
+[DEBUG] [2020-08-27 15:32:48,908] [parse_proto.py:891] [_process_field_types_by_item] PPROT-FIELD-SKEL - name: repeated_message
+[DEBUG] [2020-08-27 15:32:48,908] [parse_proto.py:892] [_process_field_types_by_item] PPROT-FIELD-SKEL - object_curr: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc4a30>
+[DEBUG] [2020-08-27 15:32:48,908] [parse_proto.py:893] [_process_field_types_by_item] PPROT-FIELD-SKEL - message: None
+[DEBUG] [2020-08-27 15:32:48,909] [parse_proto.py:894] [_process_field_types_by_item] PPROT-FIELD-SKEL - full_name: example_api_v2.TestRequest.TestRequiredRequestData.TestRequiredRequiredMessage.repeated_message
+[DEBUG] [2020-08-27 15:32:48,909] [parse_proto.py:895] [_process_field_types_by_item] PPROT-FIELD-SKEL - label: 3
+[DEBUG] [2020-08-27 15:32:48,959] [parse_proto.py:896] [_process_field_types_by_item] PPROT-FIELD-SKEL - field_type: 11
+[DEBUG] [2020-08-27 15:32:48,959] [parse_proto.py:897] [_process_field_types_by_item] PPROT-FIELD-SKEL - default_value: None
+[DEBUG] [2020-08-27 15:32:48,959] [parse_proto.py:898] [_process_field_types_by_item] PPROT-FIELD-SKEL - extensions: None
+[INFO] [2020-08-27 15:32:48,959] [parse_proto.py:591] [_imported_message_name_by_items] PPROT IMPORTEDMSG - Imported message objects: [('b_test_request', <google.protobuf.pyext._message.MessageDescriptor object at 0x10ecc41f0>)]
+[INFO] [2020-08-27 15:32:48,959] [parse_proto.py:750] [_get_object_full_name] PPROT FULLNM - Objects full name is: example_api_v2.request_b.b_test_request
+[INFO] [2020-08-27 15:32:48,960] [parse_proto.py:518] [_field_is_message_type] PPROT MSGFIELD - Field is not a message type at object: <google.protobuf.pyext._message.MessageDescriptor object at 0x10ecc41f0>
+[INFO] [2020-08-27 15:32:48,960] [parse_proto.py:441] [_has_field] PPROT HFIELD - Fields_by_name: ['default_uint32', 'default_uint64', 'default_bool', 'default_string', 'default_bytes']
+[INFO] [2020-08-27 15:32:48,960] [parse_proto.py:309] [_nested_types_by_name_items] PPROT NSTD - Nested_types_by_name: []
+[INFO] [2020-08-27 15:32:48,960] [parse_proto.py:484] [_fields_by_name_items] PPROT FIELD - fields_by_name: [('default_uint32', <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc4430>), ('default_uint64', <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc4460>), ('default_bool', <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc4490>), ('default_string', <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc44c0>), ('default_bytes', <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc44f0>)]
+[DEBUG] [2020-08-27 15:32:48,960] [parse_proto.py:878] [_process_field_types_by_item] PPROT MSG-FIELD-PROC - Processing: ('default_uint32', <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc4430>)
+[INFO] [2020-08-27 15:32:48,960] [parse_proto.py:750] [_get_object_full_name] PPROT FULLNM - Objects full name is: example_api_v2.request_b.b_test_request.default_uint32
+[INFO] [2020-08-27 15:32:48,960] [parse_proto.py:518] [_field_is_message_type] PPROT MSGFIELD - Field is not a message type at object: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc4430>
+[INFO] [2020-08-27 15:32:48,960] [parse_proto.py:659] [_get_label] PPROT LABEL - Field label is, the object is: 1
+[DEBUG] [2020-08-27 15:32:48,960] [parse_proto.py:531] [_field_type] PPROT MSGFIELD - Field_type: 13
+[INFO] [2020-08-27 15:32:48,961] [parse_proto.py:620] [_get_default_value] PPROT HDEFVAL - Field has default value, the object is: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc4430>
+[INFO] [2020-08-27 15:32:48,961] [parse_proto.py:725] [_extensions_by_name_items] PPROT HASEXT - Field has not got extension value, the object is: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc4430>
+[DEBUG] [2020-08-27 15:32:48,961] [parse_proto.py:891] [_process_field_types_by_item] PPROT-FIELD-SKEL - name: default_uint32
+[DEBUG] [2020-08-27 15:32:48,961] [parse_proto.py:892] [_process_field_types_by_item] PPROT-FIELD-SKEL - object_curr: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc4430>
+[DEBUG] [2020-08-27 15:32:48,961] [parse_proto.py:893] [_process_field_types_by_item] PPROT-FIELD-SKEL - message: None
+[DEBUG] [2020-08-27 15:32:48,961] [parse_proto.py:894] [_process_field_types_by_item] PPROT-FIELD-SKEL - full_name: example_api_v2.request_b.b_test_request.default_uint32
+[DEBUG] [2020-08-27 15:32:48,961] [parse_proto.py:895] [_process_field_types_by_item] PPROT-FIELD-SKEL - label: 1
+[DEBUG] [2020-08-27 15:32:48,961] [parse_proto.py:896] [_process_field_types_by_item] PPROT-FIELD-SKEL - field_type: 13
+[DEBUG] [2020-08-27 15:32:48,962] [parse_proto.py:897] [_process_field_types_by_item] PPROT-FIELD-SKEL - default_value: 43
+[DEBUG] [2020-08-27 15:32:48,962] [parse_proto.py:898] [_process_field_types_by_item] PPROT-FIELD-SKEL - extensions: None
+[DEBUG] [2020-08-27 15:32:48,963] [parse_proto.py:878] [_process_field_types_by_item] PPROT MSG-FIELD-PROC - Processing: ('default_uint64', <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc4460>)
+[INFO] [2020-08-27 15:32:48,964] [parse_proto.py:750] [_get_object_full_name] PPROT FULLNM - Objects full name is: example_api_v2.request_b.b_test_request.default_uint64
+[INFO] [2020-08-27 15:32:48,965] [parse_proto.py:518] [_field_is_message_type] PPROT MSGFIELD - Field is not a message type at object: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc4460>
+[INFO] [2020-08-27 15:32:48,965] [parse_proto.py:659] [_get_label] PPROT LABEL - Field label is, the object is: 1
+[DEBUG] [2020-08-27 15:32:48,965] [parse_proto.py:531] [_field_type] PPROT MSGFIELD - Field_type: 4
+[INFO] [2020-08-27 15:32:48,966] [parse_proto.py:620] [_get_default_value] PPROT HDEFVAL - Field has default value, the object is: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc4460>
+[INFO] [2020-08-27 15:32:48,966] [parse_proto.py:725] [_extensions_by_name_items] PPROT HASEXT - Field has not got extension value, the object is: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc4460>
+[DEBUG] [2020-08-27 15:32:48,966] [parse_proto.py:891] [_process_field_types_by_item] PPROT-FIELD-SKEL - name: default_uint64
+[DEBUG] [2020-08-27 15:32:48,967] [parse_proto.py:892] [_process_field_types_by_item] PPROT-FIELD-SKEL - object_curr: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc4460>
+[DEBUG] [2020-08-27 15:32:48,967] [parse_proto.py:893] [_process_field_types_by_item] PPROT-FIELD-SKEL - message: None
+[DEBUG] [2020-08-27 15:32:48,967] [parse_proto.py:894] [_process_field_types_by_item] PPROT-FIELD-SKEL - full_name: example_api_v2.request_b.b_test_request.default_uint64
+[DEBUG] [2020-08-27 15:32:48,967] [parse_proto.py:895] [_process_field_types_by_item] PPROT-FIELD-SKEL - label: 1
+[DEBUG] [2020-08-27 15:32:48,967] [parse_proto.py:896] [_process_field_types_by_item] PPROT-FIELD-SKEL - field_type: 4
+[DEBUG] [2020-08-27 15:32:48,967] [parse_proto.py:897] [_process_field_types_by_item] PPROT-FIELD-SKEL - default_value: 44
+[DEBUG] [2020-08-27 15:32:48,967] [parse_proto.py:898] [_process_field_types_by_item] PPROT-FIELD-SKEL - extensions: None
+[DEBUG] [2020-08-27 15:32:48,968] [parse_proto.py:878] [_process_field_types_by_item] PPROT MSG-FIELD-PROC - Processing: ('default_bool', <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc4490>)
+[INFO] [2020-08-27 15:32:48,968] [parse_proto.py:750] [_get_object_full_name] PPROT FULLNM - Objects full name is: example_api_v2.request_b.b_test_request.default_bool
+[INFO] [2020-08-27 15:32:48,968] [parse_proto.py:518] [_field_is_message_type] PPROT MSGFIELD - Field is not a message type at object: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc4490>
+[INFO] [2020-08-27 15:32:48,968] [parse_proto.py:659] [_get_label] PPROT LABEL - Field label is, the object is: 1
+[DEBUG] [2020-08-27 15:32:48,968] [parse_proto.py:531] [_field_type] PPROT MSGFIELD - Field_type: 8
+[INFO] [2020-08-27 15:32:48,968] [parse_proto.py:620] [_get_default_value] PPROT HDEFVAL - Field has default value, the object is: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc4490>
+[INFO] [2020-08-27 15:32:48,968] [parse_proto.py:725] [_extensions_by_name_items] PPROT HASEXT - Field has not got extension value, the object is: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc4490>
+[DEBUG] [2020-08-27 15:32:48,968] [parse_proto.py:891] [_process_field_types_by_item] PPROT-FIELD-SKEL - name: default_bool
+[DEBUG] [2020-08-27 15:32:48,968] [parse_proto.py:892] [_process_field_types_by_item] PPROT-FIELD-SKEL - object_curr: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc4490>
+[DEBUG] [2020-08-27 15:32:48,969] [parse_proto.py:893] [_process_field_types_by_item] PPROT-FIELD-SKEL - message: None
+[DEBUG] [2020-08-27 15:32:48,969] [parse_proto.py:894] [_process_field_types_by_item] PPROT-FIELD-SKEL - full_name: example_api_v2.request_b.b_test_request.default_bool
+[DEBUG] [2020-08-27 15:32:48,969] [parse_proto.py:895] [_process_field_types_by_item] PPROT-FIELD-SKEL - label: 1
+[DEBUG] [2020-08-27 15:32:48,969] [parse_proto.py:896] [_process_field_types_by_item] PPROT-FIELD-SKEL - field_type: 8
+[DEBUG] [2020-08-27 15:32:48,969] [parse_proto.py:897] [_process_field_types_by_item] PPROT-FIELD-SKEL - default_value: True
+[DEBUG] [2020-08-27 15:32:48,969] [parse_proto.py:898] [_process_field_types_by_item] PPROT-FIELD-SKEL - extensions: None
+[DEBUG] [2020-08-27 15:32:48,969] [parse_proto.py:878] [_process_field_types_by_item] PPROT MSG-FIELD-PROC - Processing: ('default_string', <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc44c0>)
+[INFO] [2020-08-27 15:32:48,969] [parse_proto.py:750] [_get_object_full_name] PPROT FULLNM - Objects full name is: example_api_v2.request_b.b_test_request.default_string
+[INFO] [2020-08-27 15:32:48,970] [parse_proto.py:518] [_field_is_message_type] PPROT MSGFIELD - Field is not a message type at object: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc44c0>
+[INFO] [2020-08-27 15:32:48,970] [parse_proto.py:659] [_get_label] PPROT LABEL - Field label is, the object is: 1
+[DEBUG] [2020-08-27 15:32:48,970] [parse_proto.py:531] [_field_type] PPROT MSGFIELD - Field_type: 9
+[INFO] [2020-08-27 15:32:48,970] [parse_proto.py:620] [_get_default_value] PPROT HDEFVAL - Field has default value, the object is: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc44c0>
+[INFO] [2020-08-27 15:32:48,970] [parse_proto.py:725] [_extensions_by_name_items] PPROT HASEXT - Field has not got extension value, the object is: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc44c0>
+[DEBUG] [2020-08-27 15:32:48,970] [parse_proto.py:891] [_process_field_types_by_item] PPROT-FIELD-SKEL - name: default_string
+[DEBUG] [2020-08-27 15:32:48,970] [parse_proto.py:892] [_process_field_types_by_item] PPROT-FIELD-SKEL - object_curr: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc44c0>
+[DEBUG] [2020-08-27 15:32:48,971] [parse_proto.py:893] [_process_field_types_by_item] PPROT-FIELD-SKEL - message: None
+[DEBUG] [2020-08-27 15:32:48,971] [parse_proto.py:894] [_process_field_types_by_item] PPROT-FIELD-SKEL - full_name: example_api_v2.request_b.b_test_request.default_string
+[DEBUG] [2020-08-27 15:32:48,971] [parse_proto.py:895] [_process_field_types_by_item] PPROT-FIELD-SKEL - label: 1
+[DEBUG] [2020-08-27 15:32:48,971] [parse_proto.py:896] [_process_field_types_by_item] PPROT-FIELD-SKEL - field_type: 9
+[DEBUG] [2020-08-27 15:32:48,971] [parse_proto.py:897] [_process_field_types_by_item] PPROT-FIELD-SKEL - default_value: hello
+[DEBUG] [2020-08-27 15:32:48,971] [parse_proto.py:898] [_process_field_types_by_item] PPROT-FIELD-SKEL - extensions: None
+[DEBUG] [2020-08-27 15:32:48,971] [parse_proto.py:878] [_process_field_types_by_item] PPROT MSG-FIELD-PROC - Processing: ('default_bytes', <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc44f0>)
+[INFO] [2020-08-27 15:32:48,971] [parse_proto.py:750] [_get_object_full_name] PPROT FULLNM - Objects full name is: example_api_v2.request_b.b_test_request.default_bytes
+[INFO] [2020-08-27 15:32:48,971] [parse_proto.py:518] [_field_is_message_type] PPROT MSGFIELD - Field is not a message type at object: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc44f0>
+[INFO] [2020-08-27 15:32:48,971] [parse_proto.py:659] [_get_label] PPROT LABEL - Field label is, the object is: 1
+[DEBUG] [2020-08-27 15:32:48,971] [parse_proto.py:531] [_field_type] PPROT MSGFIELD - Field_type: 12
+[INFO] [2020-08-27 15:32:48,972] [parse_proto.py:620] [_get_default_value] PPROT HDEFVAL - Field has default value, the object is: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc44f0>
+[INFO] [2020-08-27 15:32:48,972] [parse_proto.py:725] [_extensions_by_name_items] PPROT HASEXT - Field has not got extension value, the object is: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc44f0>
+[DEBUG] [2020-08-27 15:32:48,972] [parse_proto.py:891] [_process_field_types_by_item] PPROT-FIELD-SKEL - name: default_bytes
+[DEBUG] [2020-08-27 15:32:48,972] [parse_proto.py:892] [_process_field_types_by_item] PPROT-FIELD-SKEL - object_curr: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc44f0>
+[DEBUG] [2020-08-27 15:32:48,972] [parse_proto.py:893] [_process_field_types_by_item] PPROT-FIELD-SKEL - message: None
+[DEBUG] [2020-08-27 15:32:48,972] [parse_proto.py:894] [_process_field_types_by_item] PPROT-FIELD-SKEL - full_name: example_api_v2.request_b.b_test_request.default_bytes
+[DEBUG] [2020-08-27 15:32:48,972] [parse_proto.py:895] [_process_field_types_by_item] PPROT-FIELD-SKEL - label: 1
+[DEBUG] [2020-08-27 15:32:48,972] [parse_proto.py:896] [_process_field_types_by_item] PPROT-FIELD-SKEL - field_type: 12
+[DEBUG] [2020-08-27 15:32:48,972] [parse_proto.py:897] [_process_field_types_by_item] PPROT-FIELD-SKEL - default_value: b'world'
+[DEBUG] [2020-08-27 15:32:48,972] [parse_proto.py:898] [_process_field_types_by_item] PPROT-FIELD-SKEL - extensions: None
+[INFO] [2020-08-27 15:32:48,972] [parse_proto.py:351] [_enum_types_by_name] PPROT ENUM - Enum_types_by_name: []
+[DEBUG] [2020-08-27 15:32:48,973] [parse_proto.py:849] [_process_message_types_by_item] PPROT-SKEL - Collecting data for the skeleton.
+[DEBUG] [2020-08-27 15:32:48,973] [parse_proto.py:850] [_process_message_types_by_item] PPROT-SKEL - name: b_test_request
+[DEBUG] [2020-08-27 15:32:48,973] [parse_proto.py:851] [_process_message_types_by_item] PPROT-SKEL - object_derived: <google.protobuf.pyext._message.MessageDescriptor object at 0x10ecc41f0>
+[DEBUG] [2020-08-27 15:32:48,973] [parse_proto.py:852] [_process_message_types_by_item] PPROT-SKEL - object_curr: <google.protobuf.pyext._message.MessageDescriptor object at 0x10ecc41f0>
+[DEBUG] [2020-08-27 15:32:48,973] [parse_proto.py:853] [_process_message_types_by_item] PPROT-SKEL - full_name: example_api_v2.request_b.b_test_request
+[DEBUG] [2020-08-27 15:32:48,973] [parse_proto.py:854] [_process_message_types_by_item] PPROT-SKEL - message_type: False
+[DEBUG] [2020-08-27 15:32:48,973] [parse_proto.py:855] [_process_message_types_by_item] PPROT-SKEL - ancestor: main_pb2.py
+[DEBUG] [2020-08-27 15:32:48,973] [parse_proto.py:856] [_process_message_types_by_item] PPROT-SKEL - has_nested_type: False
+[DEBUG] [2020-08-27 15:32:48,973] [parse_proto.py:857] [_process_message_types_by_item] PPROT-SKEL - has_field: True
+[DEBUG] [2020-08-27 15:32:48,973] [parse_proto.py:858] [_process_message_types_by_item] PPROT-SKEL - has_enum: False
+[DEBUG] [2020-08-27 15:32:48,973] [parse_proto.py:859] [_process_message_types_by_item] PPROT-SKEL - nested_type: []
+[DEBUG] [2020-08-27 15:32:48,974] [parse_proto.py:860] [_process_message_types_by_item] PPROT-SKEL - fields: [<framework.models.data_struct.field.Field object at 0x10ecc4ca0>, <framework.models.data_struct.field.Field object at 0x10ecc4cd0>, <framework.models.data_struct.field.Field object at 0x10ecc4d00>, <framework.models.data_struct.field.Field object at 0x10ecc4d30>, <framework.models.data_struct.field.Field object at 0x10ecc4d90>]
+[DEBUG] [2020-08-27 15:32:48,974] [parse_proto.py:861] [_process_message_types_by_item] PPROT-SKEL - enums: []
+[DEBUG] [2020-08-27 15:32:48,974] [parse_proto.py:878] [_process_field_types_by_item] PPROT MSG-FIELD-PROC - Processing: ('required_message', <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc4a60>)
+[INFO] [2020-08-27 15:32:48,974] [parse_proto.py:750] [_get_object_full_name] PPROT FULLNM - Objects full name is: example_api_v2.TestRequest.TestRequiredRequestData.TestRequiredRequiredMessage.required_message
+[INFO] [2020-08-27 15:32:48,974] [parse_proto.py:518] [_field_is_message_type] PPROT MSGFIELD - Field is not a message type at object: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc4a60>
+[INFO] [2020-08-27 15:32:48,974] [parse_proto.py:659] [_get_label] PPROT LABEL - Field label is, the object is: 2
+[DEBUG] [2020-08-27 15:32:48,974] [parse_proto.py:531] [_field_type] PPROT MSGFIELD - Field_type: 11
+[INFO] [2020-08-27 15:32:48,974] [parse_proto.py:725] [_extensions_by_name_items] PPROT HASEXT - Field has not got extension value, the object is: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc4a60>
+[DEBUG] [2020-08-27 15:32:48,974] [parse_proto.py:891] [_process_field_types_by_item] PPROT-FIELD-SKEL - name: required_message
+[DEBUG] [2020-08-27 15:32:48,975] [parse_proto.py:892] [_process_field_types_by_item] PPROT-FIELD-SKEL - object_curr: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc4a60>
+[DEBUG] [2020-08-27 15:32:48,975] [parse_proto.py:893] [_process_field_types_by_item] PPROT-FIELD-SKEL - message: None
+[DEBUG] [2020-08-27 15:32:48,975] [parse_proto.py:894] [_process_field_types_by_item] PPROT-FIELD-SKEL - full_name: example_api_v2.TestRequest.TestRequiredRequestData.TestRequiredRequiredMessage.required_message
+[DEBUG] [2020-08-27 15:32:48,975] [parse_proto.py:895] [_process_field_types_by_item] PPROT-FIELD-SKEL - label: 2
+[DEBUG] [2020-08-27 15:32:48,975] [parse_proto.py:896] [_process_field_types_by_item] PPROT-FIELD-SKEL - field_type: 11
+[DEBUG] [2020-08-27 15:32:48,975] [parse_proto.py:897] [_process_field_types_by_item] PPROT-FIELD-SKEL - default_value: None
+[DEBUG] [2020-08-27 15:32:48,975] [parse_proto.py:898] [_process_field_types_by_item] PPROT-FIELD-SKEL - extensions: None
+[INFO] [2020-08-27 15:32:48,975] [parse_proto.py:591] [_imported_message_name_by_items] PPROT IMPORTEDMSG - Imported message objects: [('a_test_request', <google.protobuf.pyext._message.MessageDescriptor object at 0x10ec929a0>)]
+[INFO] [2020-08-27 15:32:49,023] [parse_proto.py:750] [_get_object_full_name] PPROT FULLNM - Objects full name is: example_api_v2.request_a.a_test_request
+[INFO] [2020-08-27 15:32:49,023] [parse_proto.py:518] [_field_is_message_type] PPROT MSGFIELD - Field is not a message type at object: <google.protobuf.pyext._message.MessageDescriptor object at 0x10ec929a0>
+[INFO] [2020-08-27 15:32:49,024] [parse_proto.py:276] [_has_nested_types_by_name_keys] PPROT HNSTD - It has Nested_types_by_name: ['TestQuerydMessage']
+[INFO] [2020-08-27 15:32:49,024] [parse_proto.py:441] [_has_field] PPROT HFIELD - Fields_by_name: ['query_a', 'query_b', 'query_c']
+[INFO] [2020-08-27 15:32:49,024] [parse_proto.py:309] [_nested_types_by_name_items] PPROT NSTD - Nested_types_by_name: [('TestQuerydMessage', <google.protobuf.pyext._message.MessageDescriptor object at 0x10ec92a90>)]
+[INFO] [2020-08-27 15:32:49,024] [parse_proto.py:484] [_fields_by_name_items] PPROT FIELD - fields_by_name: [('query_a', <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc4df0>), ('query_b', <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc4e20>), ('query_c', <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc4e50>)]
+[DEBUG] [2020-08-27 15:32:49,024] [parse_proto.py:878] [_process_field_types_by_item] PPROT MSG-FIELD-PROC - Processing: ('query_a', <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc4df0>)
+[INFO] [2020-08-27 15:32:49,024] [parse_proto.py:750] [_get_object_full_name] PPROT FULLNM - Objects full name is: example_api_v2.request_a.a_test_request.query_a
+[INFO] [2020-08-27 15:32:49,024] [parse_proto.py:518] [_field_is_message_type] PPROT MSGFIELD - Field is not a message type at object: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc4df0>
+[INFO] [2020-08-27 15:32:49,024] [parse_proto.py:659] [_get_label] PPROT LABEL - Field label is, the object is: 2
+[DEBUG] [2020-08-27 15:32:49,025] [parse_proto.py:531] [_field_type] PPROT MSGFIELD - Field_type: 5
+[INFO] [2020-08-27 15:32:49,025] [parse_proto.py:725] [_extensions_by_name_items] PPROT HASEXT - Field has not got extension value, the object is: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc4df0>
+[DEBUG] [2020-08-27 15:32:49,025] [parse_proto.py:891] [_process_field_types_by_item] PPROT-FIELD-SKEL - name: query_a
+[DEBUG] [2020-08-27 15:32:49,025] [parse_proto.py:892] [_process_field_types_by_item] PPROT-FIELD-SKEL - object_curr: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc4df0>
+[DEBUG] [2020-08-27 15:32:49,025] [parse_proto.py:893] [_process_field_types_by_item] PPROT-FIELD-SKEL - message: None
+[DEBUG] [2020-08-27 15:32:49,025] [parse_proto.py:894] [_process_field_types_by_item] PPROT-FIELD-SKEL - full_name: example_api_v2.request_a.a_test_request.query_a
+[DEBUG] [2020-08-27 15:32:49,025] [parse_proto.py:895] [_process_field_types_by_item] PPROT-FIELD-SKEL - label: 2
+[DEBUG] [2020-08-27 15:32:49,025] [parse_proto.py:896] [_process_field_types_by_item] PPROT-FIELD-SKEL - field_type: 5
+[DEBUG] [2020-08-27 15:32:49,025] [parse_proto.py:897] [_process_field_types_by_item] PPROT-FIELD-SKEL - default_value: None
+[DEBUG] [2020-08-27 15:32:49,026] [parse_proto.py:898] [_process_field_types_by_item] PPROT-FIELD-SKEL - extensions: None
+[DEBUG] [2020-08-27 15:32:49,026] [parse_proto.py:878] [_process_field_types_by_item] PPROT MSG-FIELD-PROC - Processing: ('query_b', <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc4e20>)
+[INFO] [2020-08-27 15:32:49,026] [parse_proto.py:750] [_get_object_full_name] PPROT FULLNM - Objects full name is: example_api_v2.request_a.a_test_request.query_b
+[INFO] [2020-08-27 15:32:49,026] [parse_proto.py:518] [_field_is_message_type] PPROT MSGFIELD - Field is not a message type at object: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc4e20>
+[INFO] [2020-08-27 15:32:49,026] [parse_proto.py:659] [_get_label] PPROT LABEL - Field label is, the object is: 1
+[DEBUG] [2020-08-27 15:32:49,026] [parse_proto.py:531] [_field_type] PPROT MSGFIELD - Field_type: 5
+[INFO] [2020-08-27 15:32:49,026] [parse_proto.py:725] [_extensions_by_name_items] PPROT HASEXT - Field has not got extension value, the object is: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc4e20>
+[DEBUG] [2020-08-27 15:32:49,026] [parse_proto.py:891] [_process_field_types_by_item] PPROT-FIELD-SKEL - name: query_b
+[DEBUG] [2020-08-27 15:32:49,027] [parse_proto.py:892] [_process_field_types_by_item] PPROT-FIELD-SKEL - object_curr: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc4e20>
+[DEBUG] [2020-08-27 15:32:49,027] [parse_proto.py:893] [_process_field_types_by_item] PPROT-FIELD-SKEL - message: None
+[DEBUG] [2020-08-27 15:32:49,027] [parse_proto.py:894] [_process_field_types_by_item] PPROT-FIELD-SKEL - full_name: example_api_v2.request_a.a_test_request.query_b
+[DEBUG] [2020-08-27 15:32:49,027] [parse_proto.py:895] [_process_field_types_by_item] PPROT-FIELD-SKEL - label: 1
+[DEBUG] [2020-08-27 15:32:49,027] [parse_proto.py:896] [_process_field_types_by_item] PPROT-FIELD-SKEL - field_type: 5
+[DEBUG] [2020-08-27 15:32:49,027] [parse_proto.py:897] [_process_field_types_by_item] PPROT-FIELD-SKEL - default_value: None
+[DEBUG] [2020-08-27 15:32:49,027] [parse_proto.py:898] [_process_field_types_by_item] PPROT-FIELD-SKEL - extensions: None
+[DEBUG] [2020-08-27 15:32:49,027] [parse_proto.py:878] [_process_field_types_by_item] PPROT MSG-FIELD-PROC - Processing: ('query_c', <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc4e50>)
+[INFO] [2020-08-27 15:32:49,027] [parse_proto.py:750] [_get_object_full_name] PPROT FULLNM - Objects full name is: example_api_v2.request_a.a_test_request.query_c
+[INFO] [2020-08-27 15:32:49,027] [parse_proto.py:518] [_field_is_message_type] PPROT MSGFIELD - Field is not a message type at object: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc4e50>
+[INFO] [2020-08-27 15:32:49,028] [parse_proto.py:659] [_get_label] PPROT LABEL - Field label is, the object is: 2
+[DEBUG] [2020-08-27 15:32:49,028] [parse_proto.py:531] [_field_type] PPROT MSGFIELD - Field_type: 5
+[INFO] [2020-08-27 15:32:49,028] [parse_proto.py:725] [_extensions_by_name_items] PPROT HASEXT - Field has not got extension value, the object is: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc4e50>
+[DEBUG] [2020-08-27 15:32:49,028] [parse_proto.py:891] [_process_field_types_by_item] PPROT-FIELD-SKEL - name: query_c
+[DEBUG] [2020-08-27 15:32:49,028] [parse_proto.py:892] [_process_field_types_by_item] PPROT-FIELD-SKEL - object_curr: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc4e50>
+[DEBUG] [2020-08-27 15:32:49,028] [parse_proto.py:893] [_process_field_types_by_item] PPROT-FIELD-SKEL - message: None
+[DEBUG] [2020-08-27 15:32:49,029] [parse_proto.py:894] [_process_field_types_by_item] PPROT-FIELD-SKEL - full_name: example_api_v2.request_a.a_test_request.query_c
+[DEBUG] [2020-08-27 15:32:49,029] [parse_proto.py:895] [_process_field_types_by_item] PPROT-FIELD-SKEL - label: 2
+[DEBUG] [2020-08-27 15:32:49,030] [parse_proto.py:896] [_process_field_types_by_item] PPROT-FIELD-SKEL - field_type: 5
+[DEBUG] [2020-08-27 15:32:49,030] [parse_proto.py:897] [_process_field_types_by_item] PPROT-FIELD-SKEL - default_value: None
+[DEBUG] [2020-08-27 15:32:49,031] [parse_proto.py:898] [_process_field_types_by_item] PPROT-FIELD-SKEL - extensions: None
+[INFO] [2020-08-27 15:32:49,032] [parse_proto.py:351] [_enum_types_by_name] PPROT ENUM - Enum_types_by_name: []
+[DEBUG] [2020-08-27 15:32:49,032] [parse_proto.py:849] [_process_message_types_by_item] PPROT-SKEL - Collecting data for the skeleton.
+[DEBUG] [2020-08-27 15:32:49,032] [parse_proto.py:850] [_process_message_types_by_item] PPROT-SKEL - name: a_test_request
+[DEBUG] [2020-08-27 15:32:49,032] [parse_proto.py:851] [_process_message_types_by_item] PPROT-SKEL - object_derived: <google.protobuf.pyext._message.MessageDescriptor object at 0x10ec929a0>
+[DEBUG] [2020-08-27 15:32:49,033] [parse_proto.py:852] [_process_message_types_by_item] PPROT-SKEL - object_curr: <google.protobuf.pyext._message.MessageDescriptor object at 0x10ec929a0>
+[DEBUG] [2020-08-27 15:32:49,033] [parse_proto.py:853] [_process_message_types_by_item] PPROT-SKEL - full_name: example_api_v2.request_a.a_test_request
+[DEBUG] [2020-08-27 15:32:49,033] [parse_proto.py:854] [_process_message_types_by_item] PPROT-SKEL - message_type: False
+[DEBUG] [2020-08-27 15:32:49,033] [parse_proto.py:855] [_process_message_types_by_item] PPROT-SKEL - ancestor: main_pb2.py
+[DEBUG] [2020-08-27 15:32:49,033] [parse_proto.py:856] [_process_message_types_by_item] PPROT-SKEL - has_nested_type: True
+[DEBUG] [2020-08-27 15:32:49,034] [parse_proto.py:857] [_process_message_types_by_item] PPROT-SKEL - has_field: True
+[DEBUG] [2020-08-27 15:32:49,034] [parse_proto.py:858] [_process_message_types_by_item] PPROT-SKEL - has_enum: False
+[DEBUG] [2020-08-27 15:32:49,034] [parse_proto.py:859] [_process_message_types_by_item] PPROT-SKEL - nested_type: [('TestQuerydMessage', <google.protobuf.pyext._message.MessageDescriptor object at 0x10ec92a90>)]
+[DEBUG] [2020-08-27 15:32:49,034] [parse_proto.py:860] [_process_message_types_by_item] PPROT-SKEL - fields: [<framework.models.data_struct.field.Field object at 0x10ecc4e80>, <framework.models.data_struct.field.Field object at 0x10ecc4eb0>, <framework.models.data_struct.field.Field object at 0x10ecc4ee0>]
+[DEBUG] [2020-08-27 15:32:49,034] [parse_proto.py:861] [_process_message_types_by_item] PPROT-SKEL - enums: []
+[INFO] [2020-08-27 15:32:49,034] [parse_proto.py:351] [_enum_types_by_name] PPROT ENUM - Enum_types_by_name: []
+[DEBUG] [2020-08-27 15:32:49,034] [parse_proto.py:849] [_process_message_types_by_item] PPROT-SKEL - Collecting data for the skeleton.
+[DEBUG] [2020-08-27 15:32:49,034] [parse_proto.py:850] [_process_message_types_by_item] PPROT-SKEL - name: TestRequiredRequiredMessage
+[DEBUG] [2020-08-27 15:32:49,035] [parse_proto.py:851] [_process_message_types_by_item] PPROT-SKEL - object_derived: <google.protobuf.pyext._message.MessageDescriptor object at 0x10ec8cdf0>
+[DEBUG] [2020-08-27 15:32:49,035] [parse_proto.py:852] [_process_message_types_by_item] PPROT-SKEL - object_curr: <google.protobuf.pyext._message.MessageDescriptor object at 0x10ec8cdf0>
+[DEBUG] [2020-08-27 15:32:49,035] [parse_proto.py:853] [_process_message_types_by_item] PPROT-SKEL - full_name: example_api_v2.TestRequest.TestRequiredRequestData.TestRequiredRequiredMessage
+[DEBUG] [2020-08-27 15:32:49,035] [parse_proto.py:854] [_process_message_types_by_item] PPROT-SKEL - message_type: False
+[DEBUG] [2020-08-27 15:32:49,035] [parse_proto.py:855] [_process_message_types_by_item] PPROT-SKEL - ancestor: main_pb2.py
+[DEBUG] [2020-08-27 15:32:49,035] [parse_proto.py:856] [_process_message_types_by_item] PPROT-SKEL - has_nested_type: False
+[DEBUG] [2020-08-27 15:32:49,035] [parse_proto.py:857] [_process_message_types_by_item] PPROT-SKEL - has_field: True
+[DEBUG] [2020-08-27 15:32:49,035] [parse_proto.py:858] [_process_message_types_by_item] PPROT-SKEL - has_enum: False
+[DEBUG] [2020-08-27 15:32:49,035] [parse_proto.py:859] [_process_message_types_by_item] PPROT-SKEL - nested_type: []
+[DEBUG] [2020-08-27 15:32:49,036] [parse_proto.py:860] [_process_message_types_by_item] PPROT-SKEL - fields: [<framework.models.data_struct.field.Field object at 0x10ecc4a90>, <framework.models.data_struct.field.Field object at 0x10ecc4af0>, <framework.models.data_struct.field.Field object at 0x10ecc4c70>]
+[DEBUG] [2020-08-27 15:32:49,036] [parse_proto.py:861] [_process_message_types_by_item] PPROT-SKEL - enums: []
+[INFO] [2020-08-27 15:32:49,036] [parse_proto.py:812] [_do_recurse_nested] PPROT-NESREC - Level has no more nested_types_by_name: <class 'main_pb2.TestRequest'>!
+[INFO] [2020-08-27 15:32:49,036] [parse_proto.py:813] [_do_recurse_nested] PPROT-NESREC - It's time to step to the next one!
+[DEBUG] [2020-08-27 15:32:49,036] [parse_proto.py:793] [_do_recurse_nested] PPROT-NESREC - 101 the actual list of nesteds [[('TestRequiredRequestData', <google.protobuf.pyext._message.MessageDescriptor object at 0x10ecc41c0>)], [('TestRequiredRequiredMessage', <google.protobuf.pyext._message.MessageDescriptor object at 0x10ec8cdf0>), ('TestImportedaRequest', <google.protobuf.pyext._message.MessageDescriptor object at 0x10ec8ce80>)]]
+[DEBUG] [2020-08-27 15:32:49,036] [parse_proto.py:794] [_do_recurse_nested] PPROT-NESREC - 102 currently processing TestImportedaRequest nested message.
+[INFO] [2020-08-27 15:32:49,036] [parse_proto.py:750] [_get_object_full_name] PPROT FULLNM - Objects full name is: example_api_v2.TestRequest.TestRequiredRequestData.TestImportedaRequest
+[INFO] [2020-08-27 15:32:49,036] [parse_proto.py:518] [_field_is_message_type] PPROT MSGFIELD - Field is not a message type at object: <google.protobuf.pyext._message.MessageDescriptor object at 0x10ec8ce80>
+[INFO] [2020-08-27 15:32:49,036] [parse_proto.py:441] [_has_field] PPROT HFIELD - Fields_by_name: ['request_a', 'EnumProto']
+[INFO] [2020-08-27 15:32:49,036] [parse_proto.py:309] [_nested_types_by_name_items] PPROT NSTD - Nested_types_by_name: []
+[INFO] [2020-08-27 15:32:49,037] [parse_proto.py:484] [_fields_by_name_items] PPROT FIELD - fields_by_name: [('request_a', <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc4f40>), ('EnumProto', <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc4f70>)]
+[DEBUG] [2020-08-27 15:32:49,037] [parse_proto.py:878] [_process_field_types_by_item] PPROT MSG-FIELD-PROC - Processing: ('request_a', <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc4f40>)
+[INFO] [2020-08-27 15:32:49,037] [parse_proto.py:750] [_get_object_full_name] PPROT FULLNM - Objects full name is: example_api_v2.TestRequest.TestRequiredRequestData.TestImportedaRequest.request_a
+[INFO] [2020-08-27 15:32:49,037] [parse_proto.py:518] [_field_is_message_type] PPROT MSGFIELD - Field is not a message type at object: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc4f40>
+[INFO] [2020-08-27 15:32:49,037] [parse_proto.py:659] [_get_label] PPROT LABEL - Field label is, the object is: 3
+[DEBUG] [2020-08-27 15:32:49,037] [parse_proto.py:531] [_field_type] PPROT MSGFIELD - Field_type: 11
+[INFO] [2020-08-27 15:32:49,037] [parse_proto.py:725] [_extensions_by_name_items] PPROT HASEXT - Field has not got extension value, the object is: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc4f40>
+[DEBUG] [2020-08-27 15:32:49,037] [parse_proto.py:891] [_process_field_types_by_item] PPROT-FIELD-SKEL - name: request_a
+[DEBUG] [2020-08-27 15:32:49,037] [parse_proto.py:892] [_process_field_types_by_item] PPROT-FIELD-SKEL - object_curr: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc4f40>
+[DEBUG] [2020-08-27 15:32:49,037] [parse_proto.py:893] [_process_field_types_by_item] PPROT-FIELD-SKEL - message: None
+[DEBUG] [2020-08-27 15:32:49,038] [parse_proto.py:894] [_process_field_types_by_item] PPROT-FIELD-SKEL - full_name: example_api_v2.TestRequest.TestRequiredRequestData.TestImportedaRequest.request_a
+[DEBUG] [2020-08-27 15:32:49,038] [parse_proto.py:895] [_process_field_types_by_item] PPROT-FIELD-SKEL - label: 3
+[DEBUG] [2020-08-27 15:32:49,038] [parse_proto.py:896] [_process_field_types_by_item] PPROT-FIELD-SKEL - field_type: 11
+[DEBUG] [2020-08-27 15:32:49,038] [parse_proto.py:897] [_process_field_types_by_item] PPROT-FIELD-SKEL - default_value: None
+[DEBUG] [2020-08-27 15:32:49,038] [parse_proto.py:898] [_process_field_types_by_item] PPROT-FIELD-SKEL - extensions: None
+[INFO] [2020-08-27 15:32:49,038] [parse_proto.py:591] [_imported_message_name_by_items] PPROT IMPORTEDMSG - Imported message objects: [('a_test_request', <google.protobuf.pyext._message.MessageDescriptor object at 0x10ec929a0>)]
+[INFO] [2020-08-27 15:32:49,038] [parse_proto.py:750] [_get_object_full_name] PPROT FULLNM - Objects full name is: example_api_v2.request_a.a_test_request
+[INFO] [2020-08-27 15:32:49,038] [parse_proto.py:518] [_field_is_message_type] PPROT MSGFIELD - Field is not a message type at object: <google.protobuf.pyext._message.MessageDescriptor object at 0x10ec929a0>
+[INFO] [2020-08-27 15:32:49,038] [parse_proto.py:276] [_has_nested_types_by_name_keys] PPROT HNSTD - It has Nested_types_by_name: ['TestQuerydMessage']
+[INFO] [2020-08-27 15:32:49,038] [parse_proto.py:441] [_has_field] PPROT HFIELD - Fields_by_name: ['query_a', 'query_b', 'query_c']
+[INFO] [2020-08-27 15:32:49,038] [parse_proto.py:309] [_nested_types_by_name_items] PPROT NSTD - Nested_types_by_name: [('TestQuerydMessage', <google.protobuf.pyext._message.MessageDescriptor object at 0x10ec92a90>)]
+[INFO] [2020-08-27 15:32:49,039] [parse_proto.py:484] [_fields_by_name_items] PPROT FIELD - fields_by_name: [('query_a', <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc4df0>), ('query_b', <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc4e20>), ('query_c', <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc4e50>)]
+[DEBUG] [2020-08-27 15:32:49,039] [parse_proto.py:878] [_process_field_types_by_item] PPROT MSG-FIELD-PROC - Processing: ('query_a', <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc4df0>)
+[INFO] [2020-08-27 15:32:49,039] [parse_proto.py:750] [_get_object_full_name] PPROT FULLNM - Objects full name is: example_api_v2.request_a.a_test_request.query_a
+[INFO] [2020-08-27 15:32:49,039] [parse_proto.py:518] [_field_is_message_type] PPROT MSGFIELD - Field is not a message type at object: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc4df0>
+[INFO] [2020-08-27 15:32:49,039] [parse_proto.py:659] [_get_label] PPROT LABEL - Field label is, the object is: 2
+[DEBUG] [2020-08-27 15:32:49,039] [parse_proto.py:531] [_field_type] PPROT MSGFIELD - Field_type: 5
+[INFO] [2020-08-27 15:32:49,039] [parse_proto.py:725] [_extensions_by_name_items] PPROT HASEXT - Field has not got extension value, the object is: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc4df0>
+[DEBUG] [2020-08-27 15:32:49,039] [parse_proto.py:891] [_process_field_types_by_item] PPROT-FIELD-SKEL - name: query_a
+[DEBUG] [2020-08-27 15:32:49,039] [parse_proto.py:892] [_process_field_types_by_item] PPROT-FIELD-SKEL - object_curr: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc4df0>
+[DEBUG] [2020-08-27 15:32:49,040] [parse_proto.py:893] [_process_field_types_by_item] PPROT-FIELD-SKEL - message: None
+[DEBUG] [2020-08-27 15:32:49,040] [parse_proto.py:894] [_process_field_types_by_item] PPROT-FIELD-SKEL - full_name: example_api_v2.request_a.a_test_request.query_a
+[DEBUG] [2020-08-27 15:32:49,040] [parse_proto.py:895] [_process_field_types_by_item] PPROT-FIELD-SKEL - label: 2
+[DEBUG] [2020-08-27 15:32:49,040] [parse_proto.py:896] [_process_field_types_by_item] PPROT-FIELD-SKEL - field_type: 5
+[DEBUG] [2020-08-27 15:32:49,040] [parse_proto.py:897] [_process_field_types_by_item] PPROT-FIELD-SKEL - default_value: None
+[DEBUG] [2020-08-27 15:32:49,040] [parse_proto.py:898] [_process_field_types_by_item] PPROT-FIELD-SKEL - extensions: None
+[DEBUG] [2020-08-27 15:32:49,040] [parse_proto.py:878] [_process_field_types_by_item] PPROT MSG-FIELD-PROC - Processing: ('query_b', <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc4e20>)
+[INFO] [2020-08-27 15:32:49,040] [parse_proto.py:750] [_get_object_full_name] PPROT FULLNM - Objects full name is: example_api_v2.request_a.a_test_request.query_b
+[INFO] [2020-08-27 15:32:49,041] [parse_proto.py:518] [_field_is_message_type] PPROT MSGFIELD - Field is not a message type at object: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc4e20>
+[INFO] [2020-08-27 15:32:49,041] [parse_proto.py:659] [_get_label] PPROT LABEL - Field label is, the object is: 1
+[DEBUG] [2020-08-27 15:32:49,041] [parse_proto.py:531] [_field_type] PPROT MSGFIELD - Field_type: 5
+[INFO] [2020-08-27 15:32:49,041] [parse_proto.py:725] [_extensions_by_name_items] PPROT HASEXT - Field has not got extension value, the object is: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc4e20>
+[DEBUG] [2020-08-27 15:32:49,041] [parse_proto.py:891] [_process_field_types_by_item] PPROT-FIELD-SKEL - name: query_b
+[DEBUG] [2020-08-27 15:32:49,041] [parse_proto.py:892] [_process_field_types_by_item] PPROT-FIELD-SKEL - object_curr: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc4e20>
+[DEBUG] [2020-08-27 15:32:49,041] [parse_proto.py:893] [_process_field_types_by_item] PPROT-FIELD-SKEL - message: None
+[DEBUG] [2020-08-27 15:32:49,041] [parse_proto.py:894] [_process_field_types_by_item] PPROT-FIELD-SKEL - full_name: example_api_v2.request_a.a_test_request.query_b
+[DEBUG] [2020-08-27 15:32:49,041] [parse_proto.py:895] [_process_field_types_by_item] PPROT-FIELD-SKEL - label: 1
+[DEBUG] [2020-08-27 15:32:49,041] [parse_proto.py:896] [_process_field_types_by_item] PPROT-FIELD-SKEL - field_type: 5
+[DEBUG] [2020-08-27 15:32:49,041] [parse_proto.py:897] [_process_field_types_by_item] PPROT-FIELD-SKEL - default_value: None
+[DEBUG] [2020-08-27 15:32:49,042] [parse_proto.py:898] [_process_field_types_by_item] PPROT-FIELD-SKEL - extensions: None
+[DEBUG] [2020-08-27 15:32:49,090] [parse_proto.py:878] [_process_field_types_by_item] PPROT MSG-FIELD-PROC - Processing: ('query_c', <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc4e50>)
+[INFO] [2020-08-27 15:32:49,091] [parse_proto.py:750] [_get_object_full_name] PPROT FULLNM - Objects full name is: example_api_v2.request_a.a_test_request.query_c
+[INFO] [2020-08-27 15:32:49,091] [parse_proto.py:518] [_field_is_message_type] PPROT MSGFIELD - Field is not a message type at object: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc4e50>
+[INFO] [2020-08-27 15:32:49,091] [parse_proto.py:659] [_get_label] PPROT LABEL - Field label is, the object is: 2
+[DEBUG] [2020-08-27 15:32:49,091] [parse_proto.py:531] [_field_type] PPROT MSGFIELD - Field_type: 5
+[INFO] [2020-08-27 15:32:49,091] [parse_proto.py:725] [_extensions_by_name_items] PPROT HASEXT - Field has not got extension value, the object is: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc4e50>
+[DEBUG] [2020-08-27 15:32:49,091] [parse_proto.py:891] [_process_field_types_by_item] PPROT-FIELD-SKEL - name: query_c
+[DEBUG] [2020-08-27 15:32:49,091] [parse_proto.py:892] [_process_field_types_by_item] PPROT-FIELD-SKEL - object_curr: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc4e50>
+[DEBUG] [2020-08-27 15:32:49,091] [parse_proto.py:893] [_process_field_types_by_item] PPROT-FIELD-SKEL - message: None
+[DEBUG] [2020-08-27 15:32:49,092] [parse_proto.py:894] [_process_field_types_by_item] PPROT-FIELD-SKEL - full_name: example_api_v2.request_a.a_test_request.query_c
+[DEBUG] [2020-08-27 15:32:49,092] [parse_proto.py:895] [_process_field_types_by_item] PPROT-FIELD-SKEL - label: 2
+[DEBUG] [2020-08-27 15:32:49,092] [parse_proto.py:896] [_process_field_types_by_item] PPROT-FIELD-SKEL - field_type: 5
+[DEBUG] [2020-08-27 15:32:49,092] [parse_proto.py:897] [_process_field_types_by_item] PPROT-FIELD-SKEL - default_value: None
+[DEBUG] [2020-08-27 15:32:49,092] [parse_proto.py:898] [_process_field_types_by_item] PPROT-FIELD-SKEL - extensions: None
+[INFO] [2020-08-27 15:32:49,092] [parse_proto.py:351] [_enum_types_by_name] PPROT ENUM - Enum_types_by_name: []
+[DEBUG] [2020-08-27 15:32:49,092] [parse_proto.py:849] [_process_message_types_by_item] PPROT-SKEL - Collecting data for the skeleton.
+[DEBUG] [2020-08-27 15:32:49,092] [parse_proto.py:850] [_process_message_types_by_item] PPROT-SKEL - name: a_test_request
+[DEBUG] [2020-08-27 15:32:49,092] [parse_proto.py:851] [_process_message_types_by_item] PPROT-SKEL - object_derived: <google.protobuf.pyext._message.MessageDescriptor object at 0x10ec929a0>
+[DEBUG] [2020-08-27 15:32:49,093] [parse_proto.py:852] [_process_message_types_by_item] PPROT-SKEL - object_curr: <google.protobuf.pyext._message.MessageDescriptor object at 0x10ec929a0>
+[DEBUG] [2020-08-27 15:32:49,093] [parse_proto.py:853] [_process_message_types_by_item] PPROT-SKEL - full_name: example_api_v2.request_a.a_test_request
+[DEBUG] [2020-08-27 15:32:49,093] [parse_proto.py:854] [_process_message_types_by_item] PPROT-SKEL - message_type: False
+[DEBUG] [2020-08-27 15:32:49,093] [parse_proto.py:855] [_process_message_types_by_item] PPROT-SKEL - ancestor: main_pb2.py
+[DEBUG] [2020-08-27 15:32:49,093] [parse_proto.py:856] [_process_message_types_by_item] PPROT-SKEL - has_nested_type: True
+[DEBUG] [2020-08-27 15:32:49,093] [parse_proto.py:857] [_process_message_types_by_item] PPROT-SKEL - has_field: True
+[DEBUG] [2020-08-27 15:32:49,093] [parse_proto.py:858] [_process_message_types_by_item] PPROT-SKEL - has_enum: False
+[DEBUG] [2020-08-27 15:32:49,093] [parse_proto.py:859] [_process_message_types_by_item] PPROT-SKEL - nested_type: [('TestQuerydMessage', <google.protobuf.pyext._message.MessageDescriptor object at 0x10ec92a90>)]
+[DEBUG] [2020-08-27 15:32:49,093] [parse_proto.py:860] [_process_message_types_by_item] PPROT-SKEL - fields: [<framework.models.data_struct.field.Field object at 0x10ecd4040>, <framework.models.data_struct.field.Field object at 0x10ecd4070>, <framework.models.data_struct.field.Field object at 0x10ecd40a0>]
+[DEBUG] [2020-08-27 15:32:49,093] [parse_proto.py:861] [_process_message_types_by_item] PPROT-SKEL - enums: []
+[DEBUG] [2020-08-27 15:32:49,094] [parse_proto.py:878] [_process_field_types_by_item] PPROT MSG-FIELD-PROC - Processing: ('EnumProto', <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc4f70>)
+[INFO] [2020-08-27 15:32:49,094] [parse_proto.py:750] [_get_object_full_name] PPROT FULLNM - Objects full name is: example_api_v2.TestRequest.TestRequiredRequestData.TestImportedaRequest.EnumProto
+[INFO] [2020-08-27 15:32:49,094] [parse_proto.py:518] [_field_is_message_type] PPROT MSGFIELD - Field is not a message type at object: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc4f70>
+[INFO] [2020-08-27 15:32:49,094] [parse_proto.py:659] [_get_label] PPROT LABEL - Field label is, the object is: 3
+[DEBUG] [2020-08-27 15:32:49,094] [parse_proto.py:531] [_field_type] PPROT MSGFIELD - Field_type: 14
+[INFO] [2020-08-27 15:32:49,094] [parse_proto.py:725] [_extensions_by_name_items] PPROT HASEXT - Field has not got extension value, the object is: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc4f70>
+[DEBUG] [2020-08-27 15:32:49,094] [parse_proto.py:891] [_process_field_types_by_item] PPROT-FIELD-SKEL - name: EnumProto
+[DEBUG] [2020-08-27 15:32:49,094] [parse_proto.py:892] [_process_field_types_by_item] PPROT-FIELD-SKEL - object_curr: <google.protobuf.pyext._message.FieldDescriptor object at 0x10ecc4f70>
+[DEBUG] [2020-08-27 15:32:49,094] [parse_proto.py:893] [_process_field_types_by_item] PPROT-FIELD-SKEL - message: None
+[DEBUG] [2020-08-27 15:32:49,094] [parse_proto.py:894] [_process_field_types_by_item] PPROT-FIELD-SKEL - full_name: example_api_v2.TestRequest.TestRequiredRequestData.TestImportedaRequest.EnumProto
+[DEBUG] [2020-08-27 15:32:49,095] [parse_proto.py:895] [_process_field_types_by_item] PPROT-FIELD-SKEL - label: 3
+[DEBUG] [2020-08-27 15:32:49,095] [parse_proto.py:896] [_process_field_types_by_item] PPROT-FIELD-SKEL - field_type: 14
+[DEBUG] [2020-08-27 15:32:49,095] [parse_proto.py:897] [_process_field_types_by_item] PPROT-FIELD-SKEL - default_value: None
+[DEBUG] [2020-08-27 15:32:49,095] [parse_proto.py:898] [_process_field_types_by_item] PPROT-FIELD-SKEL - extensions: None
+[INFO] [2020-08-27 15:32:49,095] [parse_proto.py:351] [_enum_types_by_name] PPROT ENUM - Enum_types_by_name: []
+[DEBUG] [2020-08-27 15:32:49,096] [parse_proto.py:849] [_process_message_types_by_item] PPROT-SKEL - Collecting data for the skeleton.
+[DEBUG] [2020-08-27 15:32:49,097] [parse_proto.py:850] [_process_message_types_by_item] PPROT-SKEL - name: TestImportedaRequest
+[DEBUG] [2020-08-27 15:32:49,098] [parse_proto.py:851] [_process_message_types_by_item] PPROT-SKEL - object_derived: <google.protobuf.pyext._message.MessageDescriptor object at 0x10ec8ce80>
+[DEBUG] [2020-08-27 15:32:49,099] [parse_proto.py:852] [_process_message_types_by_item] PPROT-SKEL - object_curr: <google.protobuf.pyext._message.MessageDescriptor object at 0x10ec8ce80>
+[DEBUG] [2020-08-27 15:32:49,099] [parse_proto.py:853] [_process_message_types_by_item] PPROT-SKEL - full_name: example_api_v2.TestRequest.TestRequiredRequestData.TestImportedaRequest
+[DEBUG] [2020-08-27 15:32:49,100] [parse_proto.py:854] [_process_message_types_by_item] PPROT-SKEL - message_type: False
+[DEBUG] [2020-08-27 15:32:49,100] [parse_proto.py:855] [_process_message_types_by_item] PPROT-SKEL - ancestor: main_pb2.py
+[DEBUG] [2020-08-27 15:32:49,100] [parse_proto.py:856] [_process_message_types_by_item] PPROT-SKEL - has_nested_type: False
+[DEBUG] [2020-08-27 15:32:49,100] [parse_proto.py:857] [_process_message_types_by_item] PPROT-SKEL - has_field: True
+[DEBUG] [2020-08-27 15:32:49,100] [parse_proto.py:858] [_process_message_types_by_item] PPROT-SKEL - has_enum: False
+[DEBUG] [2020-08-27 15:32:49,100] [parse_proto.py:859] [_process_message_types_by_item] PPROT-SKEL - nested_type: []
+[DEBUG] [2020-08-27 15:32:49,101] [parse_proto.py:860] [_process_message_types_by_item] PPROT-SKEL - fields: [<framework.models.data_struct.field.Field object at 0x10ecc4fa0>, <framework.models.data_struct.field.Field object at 0x10ecd40d0>]
+[DEBUG] [2020-08-27 15:32:49,101] [parse_proto.py:861] [_process_message_types_by_item] PPROT-SKEL - enums: []
+[INFO] [2020-08-27 15:32:49,101] [parse_proto.py:812] [_do_recurse_nested] PPROT-NESREC - Level has no more nested_types_by_name: <class 'main_pb2.TestRequest'>!
+[INFO] [2020-08-27 15:32:49,101] [parse_proto.py:813] [_do_recurse_nested] PPROT-NESREC - It's time to step to the next one!
+[DEBUG] [2020-08-27 15:32:49,101] [parse_proto.py:815] [_do_recurse_nested] PPROT-NESREC - 103 No more nested message left. Result: [[('TestRequiredRequestData', <google.protobuf.pyext._message.MessageDescriptor object at 0x10ecc41c0>)], [('TestRequiredRequiredMessage', <google.protobuf.pyext._message.MessageDescriptor object at 0x10ec8cdf0>), ('TestImportedaRequest', <google.protobuf.pyext._message.MessageDescriptor object at 0x10ec8ce80>)]].
+[DEBUG] [2020-08-27 15:32:49,101] [parse_proto.py:815] [_do_recurse_nested] PPROT-NESREC - 103 No more nested message left. Result: [[('TestRequiredRequestData', <google.protobuf.pyext._message.MessageDescriptor object at 0x10ecc41c0>)], [('TestRequiredRequiredMessage', <google.protobuf.pyext._message.MessageDescriptor object at 0x10ec8cdf0>), ('TestImportedaRequest', <google.protobuf.pyext._message.MessageDescriptor object at 0x10ec8ce80>)]].
+[INFO] [2020-08-27 15:32:49,101] [parse_proto.py:964] [explore_pb2_api] PPROT MSG - API has no more message, message left: 0, operation end
+[INFO] [2020-08-27 15:32:49,102] [protobuf_runner.py:97] [run_proto] [15:32:49] Initiate template for Protobuf ...

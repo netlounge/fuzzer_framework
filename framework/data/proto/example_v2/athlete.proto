@@ -1,0 +1,43 @@
+syntax = "proto2";
+
+package query;
+
+
+message Athlete {
+
+    enum BikeBrand {
+        AVENTON = 1;
+        CINELI = 2;
+        EIGHTBAR = 3;
+    }
+
+    enum ShoeBrand {
+        NIKE = 1;
+        ADIDAS = 2;
+    }
+
+    message User {
+        required string user_name = 1;
+        optional string first_name = 2;
+        optional string last_name = 3;
+    }
+
+    message Bikes {
+        required BikeBrand bike_brand = 1;
+        optional string bike_name = 2;
+    }
+
+    message Shoes {
+        required ShoeBrand shoe_brand = 1;
+        optional string shoe_name = 2;
+    }
+
+    message Query {
+        required uint32 id = 1;
+        required User user = 2;
+        repeated Bikes bikes = 3;
+        repeated Shoes shoes = 4;
+        optional uint32 weight = 5;
+        optional uint32 age = 6;
+    }
+}

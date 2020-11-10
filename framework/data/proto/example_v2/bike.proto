@@ -1,0 +1,29 @@
+syntax = "proto2";
+
+package query;
+
+import "athlete.proto";
+import "route.proto";
+
+message Bike {
+
+    message Segment {
+        required uint32 seg_id = 1;
+        required string name = 2;
+        required Route.Query route = 3;
+        optional uint32 elev_high = 4;
+        optional uint32 elev_low = 5;
+        optional Hearth hearth_data = 6;
+
+        message Hearth {
+            optional uint32 average_hearth_rate = 1;
+            optional uint32 min_hearth_rate = 2;
+            optional uint32 max_hearth_rate = 3;
+        }
+    }
+
+    message Query {
+        required Athlete.Query athlete = 2;
+        repeated Segment segment = 3;
+    }
+}

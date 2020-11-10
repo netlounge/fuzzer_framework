@@ -1,0 +1,42 @@
+// EXAMPLE PROTOBUF API TO TEST PROTOBUF FUZZER
+// SCHEMA FOR PROTO2 MESSAGES
+// Protocol Buffers - Google's data interchange format
+
+syntax = "proto2";
+
+package query;
+
+import "bike.proto";
+import "swim.proto";
+import "run.proto";
+import "ski.proto";
+
+message Request {
+
+    message QueryActivities {
+        repeated Bike.Query bike_query = 1;
+        repeated Swim.Query swim_query = 2;
+        repeated Run.Query run_query = 3;
+        repeated Ski.Query ski_query = 4;
+    }
+
+    enum Activity {
+        ARCHIVE = 1;
+        ACTIVE = 2;
+    }
+    enum Private {
+        TRUE = 15;
+        FALSE = 22;
+    }
+
+    required Activity status = 1;
+    required Private private = 2;
+    required int32 id = 3;
+    required bytes access_token = 4;
+    required QueryActivities query_activities = 5;
+    required int32 date = 6;
+}
+
+message Response {
+
+}

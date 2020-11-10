@@ -1,0 +1,1 @@
+[ERROR] [2020-11-06 18:12:47,403] [parse_config.py:43] [parse_config_file] No config file on path: /Users/balazsattila/Env/fuzz_framework/framework/services/data/config/framework_config.json

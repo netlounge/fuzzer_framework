@@ -1,0 +1,47 @@
+{
+  "generic": {
+    "verbosity": 1,
+    "target_host": "localhost",
+    "target_port": 8000,
+    "tls": false,
+    "web_port": 26001,
+    "archive_to_s3": false,
+    "banner": false
+  },
+  "protocol": {
+    "PROTOBUF": true,
+    "HTTP": false,
+    "DNS": false
+  },
+  "protobuf": {
+    "description": "later if we started to parse more component, here should be declare the coherent ones",
+    "test_case_desc": "Protobuf test case",
+    "proto_path": "/framework/data/proto/example_v2/",
+    "pb2_path": "/framework/models/pb2/example_v2/",
+    "modules": ["query"],
+    "classes_to_send": ["Request"]
+  },
+  "dns": {
+    "description": "dns related configuration",
+    "test_case_desc": "DNS test case",
+    "tld": "cvxtct.com",
+    "default_labels": "10.11.12.22.foo.bar",
+    "timeout": 5,
+    "A": false,
+    "NS": true,
+    "TXT": false
+  },
+  "http": {
+    "description": "http related configuration",
+    "test_case_desc": "HTTP test case",
+    "GET": true,
+    "POST_PUT": false,
+    "POST_UPDATE": false,
+    "DELETE": false,
+    "HEAD": false,
+    "fuzz_protocol": false,
+    "path": "/dev/todos",
+    "content_type": "text/plain",
+    "sample_payload": "{\"data_item\": \"dummy data\"}"
+  }
+}

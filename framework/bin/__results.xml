@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<testsuite errors="0" failures="0" name="" skipped="0" tests="" time="0" timestamp="">
+    <testcase classname="Failure in response." name="name" time="0.034980058670043945" timestamp="1582733255.695603" />
+    <testcase classname="Failure in response." name="name" time="0.03306698799133301" timestamp="1582733248.5304651" />
+    <testcase classname="Failure in response." name="name" time="0.03599834442138672" timestamp="1582733256.7989929" />
+    <testcase classname="Failure in response." name="name" time="0.020381927490234375" timestamp="1582733247.44073" />
+    <testcase classname="failed to receive response: timed out" name="name" time="0" timestamp="1582733249.628514" />
+    <system-out>&lt;![CDATA[]]&gt;</system-out>
+    <system-err>&lt;![CDATA[]]&gt;</system-err>
+</testsuite>
