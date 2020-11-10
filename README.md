@@ -17,28 +17,6 @@ Stay on master branch. The tool tested on Python3.6, 3.7.
 
 ### Install the following dependencies
 
-#### Deploy Docker CE
-
-https://docs.docker.com/install/linux/docker-ce/centos/
-```bash
-sudo yum install -y yum-utils \
-  device-mapper-persistent-data \
-  lvm2
-```
-```bash
-sudo yum-config-manager \
-    --add-repo \
-    https://download.docker.com/linux/centos/docker-ce.repo
-```
-```bash
-sudo yum install docker-ce docker-ce-cli containerd.io docker-compose
-```
-Start Docker daemon: ```sudo systemctl start docker```
-To check the version: ```docker --version```.
-
-#### Deploy Redis server
-Navigate to ```docker/redis/``` and rund ```docker-compose up -d``` this will run the Redis service in background at **port 6379**.
-
 #### Deploy Python virtualenv 
 If necessary (depends on your environment and needs)
 Check whether the package exists and get the version ```python3 -m virtualenv --version``` ``` python3 -m pip install virtualenv```
