@@ -4,6 +4,10 @@ This small framework implementation operates with the Kitty/Katnip fuzzer. It is
 
 More here https://github.com/netlounge/fuzz_frmwrk/wiki
 
+Experimental!
+
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/eef3de57d42946c58fc723273a5fe487)](https://www.codacy.com/gh/netlounge/fuzzer_framework/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=netlounge/fuzzer_framework&amp;utm_campaign=Badge_Grade)
+
 ---
 
 # Installation
@@ -12,28 +16,6 @@ More here https://github.com/netlounge/fuzz_frmwrk/wiki
 Stay on master branch. The tool tested on Python3.6, 3.7.
 
 ### Install the following dependencies
-
-#### Deploy Docker CE
-
-https://docs.docker.com/install/linux/docker-ce/centos/
-```bash
-sudo yum install -y yum-utils \
-  device-mapper-persistent-data \
-  lvm2
-```
-```bash
-sudo yum-config-manager \
-    --add-repo \
-    https://download.docker.com/linux/centos/docker-ce.repo
-```
-```bash
-sudo yum install docker-ce docker-ce-cli containerd.io docker-compose
-```
-Start Docker daemon: ```sudo systemctl start docker```
-To check the version: ```docker --version```.
-
-#### Deploy Redis server
-Navigate to ```docker/redis/``` and rund ```docker-compose up -d``` this will run the Redis service in background at **port 6379**.
 
 #### Deploy Python virtualenv 
 If necessary (depends on your environment and needs)
