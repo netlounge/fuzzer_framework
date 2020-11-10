@@ -51,3 +51,5 @@ docs/source/*
 framework/models/pb2/api/*
 
 htmlcov/
+
+/**/__pycache__/
