@@ -28,6 +28,3 @@ htmlcov/
 
 # pycache
 /**/__pycache__/
-
-# CI/CD
-.travis.yml
