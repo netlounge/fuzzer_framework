@@ -1,5 +1,8 @@
 
 # Fuzz Framework
+
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/229f73ad3f134c9dbae80abf179f0319)](https://app.codacy.com/gh/netlounge/fuzzer_framework?utm_source=github.com&utm_medium=referral&utm_content=netlounge/fuzzer_framework&utm_campaign=Badge_Grade)
+
 This small framework implementation operates with the Kitty/Katnip fuzzer. It is intended to make a HTTP(s), DNS, Protobuf over HTTP(s) fuzz test easier.
 
 More here https://github.com/netlounge/fuzz_frmwrk/wiki
