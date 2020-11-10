@@ -1,0 +1,58 @@
+# celery beat schedule file
+celerybeat-schedule
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Containers
+# Redis data persistence
+docker/redis/redis_data/
+# WordPress
+cloud_configs/
+
+
+# TMP
+framework/bin/tmp/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+
+# IDE
+.idea/
+
+# Flake8 reports
+flake-report/
+
+# SONARQUBE
+docker/sonarqube/sonar-scanner-4.2.0.1873-macosx/
+.scannerwork
+
+
+# GARBAGE
+fuzz_framework/framework/bin/tmp/*
+
+# SPHINX
+docs/_build/*
+docs/source/*
+
+# excl api
+framework/models/pb2/api/*
