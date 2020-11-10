@@ -13,6 +13,6 @@ script:
   - coverage xml -i
   - ls -lha
   - ls -lha unit_tests/
-  - send_coverage_codacy.sh
+  - ./send_coverage_codacy.sh
   - sphinx-apidoc -f -o docs/source ./framework/models/
   - cd docs && make html
