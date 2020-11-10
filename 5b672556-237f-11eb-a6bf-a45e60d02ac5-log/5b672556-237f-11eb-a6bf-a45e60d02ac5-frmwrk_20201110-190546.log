@@ -1,0 +1,4 @@
+[INFO] [2020-11-10 19:05:47,427] [search_file.py:40] [search_file] CONF - file dir: /Users/balazsattila/Env/fuzzer_framework/framework/data/proto/example_v2
+[INFO] [2020-11-10 19:05:47,428] [search_file.py:40] [search_file] CONF - file dir: /Users/balazsattila/Env/fuzzer_framework/framework/models/pb2/example_v2
+[INFO] [2020-11-10 19:05:47,429] [search_file.py:40] [search_file] CONF - file dir: /Users/balazsattila/Env/fuzzer_framework/framework/models/pb2/example_v2
+[ERROR] [2020-11-10 19:05:47,447] [utils.py:106] [rename_log_file] No kitty log file at /Users/balazsattila/Env/fuzzer_framework/kittylogs/
