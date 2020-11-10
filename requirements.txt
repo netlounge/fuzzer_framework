@@ -60,4 +60,4 @@ virtualenv-clone==0.5.3
 wcwidth==0.1.7
 wrapt==1.11.2
 zipp==0.5.2
-sphinx-apidoc==1.8.0
+sphinx-apidoc

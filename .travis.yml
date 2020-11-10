@@ -13,3 +13,4 @@ script:
   - coverage xml -i
   - sphinx-apidoc -f -o docs/source ./framework third_party/ ./framework/models/
   - cd ./docs && make html
+  -
