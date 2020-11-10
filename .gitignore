@@ -20,11 +20,12 @@ fuzz_framework/framework/bin/tmp/*
 docs/_build/*
 docs/source/*
 
-# excl api
+# exclude api
 framework/models/pb2/api/*
 
 # Coverage
 htmlcov/
+coverage.xml
 
 # pycache
 /**/__pycache__/
