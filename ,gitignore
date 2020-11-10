@@ -13,12 +13,6 @@ ENV/
 env.bak/
 venv.bak/
 
-# Containers
-# Redis data persistence
-docker/redis/redis_data/
-# WordPress
-cloud_configs/
-
 
 # TMP
 framework/bin/tmp/
@@ -56,3 +50,5 @@ docs/source/*
 
 # excl api
 framework/models/pb2/api/*
+
+/htmlcov
