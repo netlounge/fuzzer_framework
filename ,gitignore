@@ -40,7 +40,6 @@ flake-report/
 docker/sonarqube/sonar-scanner-4.2.0.1873-macosx/
 .scannerwork
 
-
 # GARBAGE
 fuzz_framework/framework/bin/tmp/*
 
