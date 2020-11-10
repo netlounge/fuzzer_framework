@@ -50,4 +50,4 @@ docs/source/*
 # excl api
 framework/models/pb2/api/*
 
-/htmlcov
+htmlcov/
