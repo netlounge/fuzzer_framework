@@ -4,6 +4,10 @@ This small framework implementation operates with the Kitty/Katnip fuzzer. It is
 
 More here https://github.com/netlounge/fuzz_frmwrk/wiki
 
+Experimental!
+
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/eef3de57d42946c58fc723273a5fe487)](https://www.codacy.com/gh/netlounge/fuzzer_framework/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=netlounge/fuzzer_framework&amp;utm_campaign=Badge_Grade)
+
 ---
 
 # Installation
