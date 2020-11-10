@@ -51,6 +51,9 @@ PyYAML==5.2
 requests==2.22.0
 s3transfer==0.3.3
 six==1.15.0
+Sphinx==2.4.4
+sphinx-rtd-theme==0.4.3
+sphinxcontrib-napoleon==0.7
 toml==0.10.0
 tox==3.20.0
 typed-ast==1.4.0
@@ -60,4 +63,3 @@ virtualenv-clone==0.5.3
 wcwidth==0.1.7
 wrapt==1.11.2
 zipp==0.5.2
-sphinx-apidoc
