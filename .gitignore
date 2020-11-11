@@ -9,6 +9,8 @@ venv.bak/
 
 # TMP
 framework/bin/tmp/
+framework/bin/fuzzer_logs
+framework/bin/tmp/results
 
 # IDE
 .idea/
