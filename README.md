@@ -8,7 +8,7 @@ Experimental project.
 
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/eef3de57d42946c58fc723273a5fe487)](https://www.codacy.com/gh/netlounge/fuzzer_framework/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=netlounge/fuzzer_framework&amp;utm_campaign=Badge_Grade)
 [![Build Status](https://travis-ci.com/netlounge/fuzzer_framework.svg?branch=master)](https://travis-ci.com/netlounge/fuzzer_framework)
-
+[![Codacy Badge](https://app.codacy.com/project/badge/Coverage/eef3de57d42946c58fc723273a5fe487)](https://www.codacy.com/gh/netlounge/fuzzer_framework/dashboard?utm_source=github.com&utm_medium=referral&utm_content=netlounge/fuzzer_framework&utm_campaign=Badge_Coverage)
 ---
 
 # Installation
@@ -260,7 +260,7 @@ json_format Google component populates the given Protobuf message with the fuzze
     "test_case_desc": "Protobuf test case",
     "proto_path": "/framework/data/proto/",  # not in use;
     "pb2_path": "/framework/models/pb2/api/",  # the compiled pb2 API;
-    "modules": ["xxrrr_pb2"],  # compiled component name, enought the one that implements oders;
+    "modules": ["addressbook"],  # compiled component name, enought the one that implements oders;
     "classes_to_send": ["Person"]  # The subsequent node of the top level message
   }
   ```
@@ -310,9 +310,3 @@ If necesary the S3 archiver component of the framework could be invoke by settin
 ***Use this function at your own risk, S3 object upload and storage usage might have costs that depend on several factor!*** 
 *AWS S3 pricing*: https://aws.amazon.com/s3/pricing/
  
-
-### Unit tests
-Currently tests are covering narrow set of code (64%) that can be run via ***tox*** from the root folder and provide coverage data under `htmlcov/` folder. Further coverage is on its way.
-
-### Documentation
-Sphinx documentation can be found under `docs/_build/html/index.html` and can be regenerate under `docs/` with `make html`. Tox also regenerate it.

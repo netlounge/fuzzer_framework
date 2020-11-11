@@ -13,3 +13,5 @@ script:
   - coverage xml -i
   - bash <(curl -Ls https://coverage.codacy.com/get.sh) report -l Python -r coverage.xml
   - sphinx-apidoc -f -o docs/source ./framework/models/
+  - pip install sphinx_theme
+  - cd ./docs && make html

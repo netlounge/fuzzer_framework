@@ -1,0 +1,33 @@
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# TMP
+framework/bin/tmp/
+framework/bin/fuzzer_logs
+framework/bin/tmp/results
+
+# IDE
+.idea/
+
+# GARBAGE
+fuzz_framework/framework/bin/tmp/*
+
+# SPHINX
+docs/_build/*
+docs/source/*
+
+# exclude api
+framework/models/pb2/api/*
+
+# Coverage
+htmlcov/
+coverage.xml
+
+# pycache
+/**/__pycache__/
